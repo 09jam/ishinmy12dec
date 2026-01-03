@@ -1,261 +1,1709 @@
 <!doctype html><html><head><meta charset='utf-8'><title>Myntra DRR</title>
-<style>body{background:#000;color:#fff;font-family:Arial;padding:18px}.heading{text-align:center;font-size:28px;margin-bottom:16px}.controls{display:flex;gap:14px;margin-bottom:20px;flex-wrap:wrap}.ctrl{position:relative}.btn{background:#111;border:1px solid #333;color:#fff;padding:8px 10px;border-radius:6px;cursor:pointer;min-width:210px;text-align:left}.dropdown{position:absolute;top:44px;left:0;background:#111;border:1px solid #333;border-radius:6px;display:none;max-height:260px;overflow:auto;padding:8px;z-index:20}.dropdown.show{display:block}.dd-item{display:flex;gap:6px;padding:4px}.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{border:1px solid #222;border-radius:8px;padding:10px}.img-wrap{position:relative}.card img{width:100%;height:300px;object-fit:cover;border-radius:6px}.overlay{position:absolute;bottom:0;left:0;width:100%;height:5%;min-height:16px;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;font-size:12px}.meta{margin-top:10px;font-size:14px}.meta-row{display:flex;gap:16px;margin:5px 0}.label{font-weight:bold}</style></head><body>
-<div class='heading'>Myntra DRR : 224</div>
-<div class='controls'><div class='ctrl'><button id='artBtn' class='btn'>Filter by Article Type</button><div id='artDD' class='dropdown'><div class='dd-item'><input id='all' type='checkbox' checked>All article types</div>
-<div class='dd-item'><input class='art' type='checkbox' checked value='Burqas'>Burqas</div>
+<style>
+body{background:#000;color:#fff;font-family:Arial,Helvetica,sans-serif;padding:18px}
+.heading{text-align:center;font-size:28px;margin-bottom:16px}
+.controls{display:flex;gap:14px;margin-bottom:20px;flex-wrap:wrap}
+.ctrl{position:relative}
+.btn{background:#111;border:1px solid #333;color:#fff;padding:8px 10px;border-radius:6px;cursor:pointer;min-width:210px;text-align:left}
+.dropdown{position:absolute;top:44px;left:0;background:#111;border:1px solid #333;border-radius:6px;display:none;max-height:260px;overflow:auto;padding:8px;z-index:20}
+.dropdown.show{display:block}
+.dd-item{display:flex;gap:6px;padding:4px}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{border:1px solid #222;border-radius:8px;padding:10px}
+.img-wrap{position:relative}
+.card img{width:100%;height:300px;object-fit:cover;border-radius:6px}
+.overlay{position:absolute;bottom:0;left:0;width:100%;height:5%;min-height:16px;
+background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;font-size:12px}
+.meta{margin-top:10px;font-size:14px}
+.meta-row{display:flex;gap:16px;margin:5px 0}
+.label{font-weight:bold}
+</style></head><body>
+<div class='heading'>Myntra DRR : 292</div>
+<div class='controls'>
+<div class='ctrl'><button id='artBtn' class='btn'>Filter by Article Type</button>
+<div id='artDD' class='dropdown'><div class='dd-item'><input id='all' type='checkbox' checked>All article types</div>
 <div class='dd-item'><input class='art' type='checkbox' checked value='Co-Ords'>Co-Ords</div>
 <div class='dd-item'><input class='art' type='checkbox' checked value='Dress Material'>Dress Material</div>
 <div class='dd-item'><input class='art' type='checkbox' checked value='Dresses'>Dresses</div>
 <div class='dd-item'><input class='art' type='checkbox' checked value='Earrings'>Earrings</div>
-<div class='dd-item'><input class='art' type='checkbox' checked value='Ethnic Dresses'>Ethnic Dresses</div>
 <div class='dd-item'><input class='art' type='checkbox' checked value='Kurta Sets'>Kurta Sets</div>
 <div class='dd-item'><input class='art' type='checkbox' checked value='Kurtas'>Kurtas</div>
 <div class='dd-item'><input class='art' type='checkbox' checked value='Mangalsutra'>Mangalsutra</div>
-<div class='dd-item'><input class='art' type='checkbox' checked value='Ring'>Ring</div>
 <div class='dd-item'><input class='art' type='checkbox' checked value='Sarees'>Sarees</div>
 <div class='dd-item'><input class='art' type='checkbox' checked value='Tops'>Tops</div>
-</div></div><div class='ctrl'><select id='docSort' class='btn'><option value=''>Sort by DoC</option><option value='asc'>DoC ↑</option><option value='desc'>DoC ↓</option></select></div></div>
-<div id='gallery' class='gallery'>
-<div class='card' data-art='Kurta Sets' data-doc='35'><div class='img-wrap'><a href='https://www.myntra.com/25516162' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2023/10/17/a6b7a34b-0dc0-441e-bf6a-9d844d08782cdefault.jpg'></a><div class='overlay'>4.2
-|
-1.9k Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW231206_BK</div><div><span class='label'>Myntra id:</span> 25516162</div><div class='meta-row'><div><b>MTD:</b> 27</div><div><b>DRR:</b> 25</div></div><div class='meta-row'><div><b>DoC:</b> 35</div><div><b>SoH:</b> 491</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 1231</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='26'><div class='img-wrap'><a href='https://www.myntra.com/25235358' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/25235358/2023/9/26/8baa5d04-c10f-40c0-af2e-b45253c400171695716776644KurtaSets1.jpg'></a><div class='overlay'>4.2
-|
-270 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW231198_NV</div><div><span class='label'>Myntra id:</span> 25235358</div><div class='meta-row'><div><b>MTD:</b> 11</div><div><b>DRR:</b> 10</div></div><div class='meta-row'><div><b>DoC:</b> 26</div><div><b>SoH:</b> 157</div></div><div><b>Status:</b> Broken: S, M, XXL</div><div><b>PO Status:</b> 13</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='71'><div class='img-wrap'><a href='https://www.myntra.com/25250248' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/25250248/2023/9/28/086422be-3215-4047-b67a-ead87f2415351695901214730IshinWomenGreenEthnicMotifsEmbroideredRegularVelvetKurtawith1.jpg'></a><div class='overlay'>4.1
-|
-518 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW231337_GN</div><div><span class='label'>Myntra id:</span> 25250248</div><div class='meta-row'><div><b>MTD:</b> 8</div><div><b>DRR:</b> 8</div></div><div class='meta-row'><div><b>DoC:</b> 71</div><div><b>SoH:</b> 283</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 45</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='22'><div class='img-wrap'><a href='https://www.myntra.com/25235402' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/25235402/2023/9/26/bb354219-ee99-4a51-be9d-d0445481fb701695718821642IshinWomensVelvetSelfDesignPurpleStraightKurtaSuitSetwithTro1.jpg'></a><div class='overlay'>4.1
-|
-519 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW231194_PL</div><div><span class='label'>Myntra id:</span> 25235402</div><div class='meta-row'><div><b>MTD:</b> 7</div><div><b>DRR:</b> 6</div></div><div class='meta-row'><div><b>DoC:</b> 22</div><div><b>SoH:</b> 86</div></div><div><b>Status:</b> Broken: S, L, XXL</div><div><b>PO Status:</b> 17</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='104'><div class='img-wrap'><a href='https://www.myntra.com/32059581' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/DECEMBER/23/Dtx8FTXT_5701bd48213849449b6dab84134c8608.jpg'></a><div class='overlay'>4
-|
-126 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW24758_GN</div><div><span class='label'>Myntra id:</span> 32059581</div><div class='meta-row'><div><b>MTD:</b> 6</div><div><b>DRR:</b> 6</div></div><div class='meta-row'><div><b>DoC:</b> 104</div><div><b>SoH:</b> 312</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Kurtas' data-doc='89'><div class='img-wrap'><a href='https://www.myntra.com/24788236' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/24788236/2023/9/2/7fa04a10-0c83-4a61-96e2-597b255e70081693665749566IshinWomenCharcoalEthnicMotifsThreadWorkJacquardKurta1.jpg'></a><div class='overlay'>4.4
-|
-96 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKAAW231020_CH</div><div><span class='label'>Myntra id:</span> 24788236</div><div class='meta-row'><div><b>MTD:</b> 8</div><div><b>DRR:</b> 6</div></div><div class='meta-row'><div><b>DoC:</b> 89</div><div><b>SoH:</b> 354</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 170</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='160'><div class='img-wrap'><a href='https://www.myntra.com/32422942' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2025/JANUARY/20/eEmYBJs1_4412fe8e4ab2419da8911acf08577b98.jpg'></a><div class='overlay'>4.4
-|
-26 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWDRAW24441_BK</div><div><span class='label'>Myntra id:</span> 32422942</div><div class='meta-row'><div><b>MTD:</b> 5</div><div><b>DRR:</b> 5</div></div><div class='meta-row'><div><b>DoC:</b> 160</div><div><b>SoH:</b> 481</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 812</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='451'><div class='img-wrap'><a href='https://www.myntra.com/31137621' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/SEPTEMBER/26/KKaKW8qm_9c97c5baee70492480355e406e3a5198.jpg'></a><div class='overlay'>4.1
-|
-638 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKTAW24233_YL</div><div><span class='label'>Myntra id:</span> 31137621</div><div class='meta-row'><div><b>MTD:</b> 7</div><div><b>DRR:</b> 5</div></div><div class='meta-row'><div><b>DoC:</b> 451</div><div><b>SoH:</b> 1803</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 2138</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='150'><div class='img-wrap'><a href='https://www.myntra.com/26729564' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/26729564/2023/12/30/a9739375-961d-43e4-8c6a-2edce2d99d351703941732757IshinWomenNavyBlueYokeDesignRegularVelvetKurtawithTrousersWi1.jpg'></a><div class='overlay'>4
-|
-161 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW231342_NV</div><div><span class='label'>Myntra id:</span> 26729564</div><div class='meta-row'><div><b>MTD:</b> 8</div><div><b>DRR:</b> 5</div></div><div class='meta-row'><div><b>DoC:</b> 150</div><div><b>SoH:</b> 600</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 8</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='292'><div class='img-wrap'><a href='https://www.myntra.com/25235326' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/25235326/2023/9/26/f3b571d2-9bd8-47cf-adae-5de9dc1d11ad1695713322709KurtaSets1.jpg'></a><div class='overlay'>4
-|
-399 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW231339_PL</div><div><span class='label'>Myntra id:</span> 25235326</div><div class='meta-row'><div><b>MTD:</b> 5</div><div><b>DRR:</b> 4</div></div><div class='meta-row'><div><b>DoC:</b> 292</div><div><b>SoH:</b> 875</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 7</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='30'><div class='img-wrap'><a href='https://www.myntra.com/25235376' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/25235376/2023/9/28/a730f51e-3ff4-458c-be4f-bce03df502d91695844337431IshinWomenNavyBlueEthnicMotifsEmbroideredRegularThreadWorkVe1.jpg'></a><div class='overlay'>3.9
-|
-441 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW231200_NV</div><div><span class='label'>Myntra id:</span> 25235376</div><div class='meta-row'><div><b>MTD:</b> 7</div><div><b>DRR:</b> 4</div></div><div class='meta-row'><div><b>DoC:</b> 30</div><div><b>SoH:</b> 119</div></div><div><b>Status:</b> Broken: XXL</div><div><b>PO Status:</b> 54</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='4'><div class='img-wrap'><a href='https://www.myntra.com/32041470' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/DECEMBER/20/ueBaZ6QD_6eba56e29809448185b6fd674718dfb7.jpg'></a><div class='overlay'>3.8
-|
-210 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKTAW24759_BK</div><div><span class='label'>Myntra id:</span> 32041470</div><div class='meta-row'><div><b>MTD:</b> 6</div><div><b>DRR:</b> 4</div></div><div class='meta-row'><div><b>DoC:</b> 4</div><div><b>SoH:</b> 12</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Kurtas' data-doc='153'><div class='img-wrap'><a href='https://www.myntra.com/24788210' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/24788210/2023/9/2/1243b3da-5f02-4ac7-b2d7-16cb8b25b2881693666028149IshinWomenGreenEthnicMotifsKeyholeNeckJacquardKurta1.jpg'></a><div class='overlay'>4.1
-|
-61 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKAAW231028_GN</div><div><span class='label'>Myntra id:</span> 24788210</div><div class='meta-row'><div><b>MTD:</b> 5</div><div><b>DRR:</b> 4</div></div><div class='meta-row'><div><b>DoC:</b> 153</div><div><b>SoH:</b> 460</div></div><div><b>Status:</b> Broken: M</div><div><b>PO Status:</b> 16</div></div></div>
-<div class='card' data-art='Kurtas' data-doc='186'><div class='img-wrap'><a href='https://www.myntra.com/24788248' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/24788248/2023/9/4/df6b4d1d-ab7a-4370-b23e-cfbbaaca6bf51693800221402IshinWomenMaroonEthnicMotifsEmbroideredKeyholeNeckJacquardKu1.jpg'></a><div class='overlay'>4.5
-|
-40 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKAAW231007_WN</div><div><span class='label'>Myntra id:</span> 24788248</div><div class='meta-row'><div><b>MTD:</b> 5</div><div><b>DRR:</b> 3</div></div><div class='meta-row'><div><b>DoC:</b> 186</div><div><b>SoH:</b> 559</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 67</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='3'><div class='img-wrap'><a href='https://www.myntra.com/32041499' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/DECEMBER/20/xpJtJxVb_4a38d4e76b1547e196524c43b97c5254.jpg'></a><div class='overlay'>4
-|
-120 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW24756_BK</div><div><span class='label'>Myntra id:</span> 32041499</div><div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 3</div></div><div class='meta-row'><div><b>DoC:</b> 3</div><div><b>SoH:</b> 6</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> 2</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='31'><div class='img-wrap'><a href='https://www.myntra.com/37936813' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/NOVEMBER/13/R7oH4PGj_da0c121a2b0a43eb999b6d9dc808583f.jpg'></a><div class='overlay'>No-Rating</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW25639_BK</div><div><span class='label'>Myntra id:</span> 37936813</div><div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 3</div></div><div class='meta-row'><div><b>DoC:</b> 31</div><div><b>SoH:</b> 62</div></div><div><b>Status:</b> Broken: L</div><div><b>PO Status:</b> 7</div></div></div>
-<div class='card' data-art='Kurtas' data-doc='29'><div class='img-wrap'><a href='https://www.myntra.com/24788252' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/24788252/2023/9/2/454a30b8-afea-433e-8e72-edbc8f3c185e1693665753149IshinWomenMaroonEthnicMotifsPrintedThreadWorkJacquardKurta1.jpg'></a><div class='overlay'>4.4
-|
-26 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKAAW231003_MN</div><div><span class='label'>Myntra id:</span> 24788252</div><div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 3</div></div><div class='meta-row'><div><b>DoC:</b> 29</div><div><b>SoH:</b> 57</div></div><div><b>Status:</b> Broken: S, M, XL, XXL</div><div><b>PO Status:</b> 8</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='10'><div class='img-wrap'><a href='https://www.myntra.com/37936819' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/NOVEMBER/13/YssK9Bvn_bf1b16171d634b3c808c90082deb1f9e.jpg'></a><div class='overlay'>No-Rating</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW25654_GL</div><div><span class='label'>Myntra id:</span> 37936819</div><div class='meta-row'><div><b>MTD:</b> 4</div><div><b>DRR:</b> 3</div></div><div class='meta-row'><div><b>DoC:</b> 10</div><div><b>SoH:</b> 20</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> 4</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='12'><div class='img-wrap'><a href='https://www.myntra.com/31384836' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/OCTOBER/22/rCiOlQXO_dfb41f6802ad4f9d9d6049c93360d921.jpg'></a><div class='overlay'>4.3
-|
-79 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKTAW24380_WN</div><div><span class='label'>Myntra id:</span> 31384836</div><div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 3</div></div><div class='meta-row'><div><b>DoC:</b> 12</div><div><b>SoH:</b> 23</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> 1</div></div></div>
-<div class='card' data-art='Kurtas' data-doc='10'><div class='img-wrap'><a href='https://www.myntra.com/37622453' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/NOVEMBER/14/30ddwMds_1f6a480edd6e4b4aaa0be0b2e9a84dce.jpg'></a><div class='overlay'>No-Rating</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKAAW25603_GN</div><div><span class='label'>Myntra id:</span> 37622453</div><div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 3</div></div><div class='meta-row'><div><b>DoC:</b> 10</div><div><b>SoH:</b> 19</div></div><div><b>Status:</b> Broken: M, L, XL, XXL</div><div><b>PO Status:</b> 32</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='15'><div class='img-wrap'><a href='https://www.myntra.com/32041462' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/DECEMBER/20/ar7STxoF_b4e136bb1bac42e694fcdec493849d85.jpg'></a><div class='overlay'>3.8
-|
-98 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKTAW24543_OW</div><div><span class='label'>Myntra id:</span> 32041462</div><div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 3</div></div><div class='meta-row'><div><b>DoC:</b> 15</div><div><b>SoH:</b> 30</div></div><div><b>Status:</b> Broken: S, M, XL, XXL</div><div><b>PO Status:</b> 26</div></div></div>
-<div class='card' data-art='Ethnic Dresses' data-doc='169'><div class='img-wrap'><a href='https://www.myntra.com/13956576' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/13956576/2021/4/19/88f27f5d-14e4-4e3e-b900-7b3aab2068681618805582536-Ishin-Womens-Off-White-Lurex-Embroidered-A-Line-Dress-836161-1.jpg'></a><div class='overlay'>4.2
-|
-1.3k Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> Topknm-12049</div><div><span class='label'>Myntra id:</span> 13956576</div><div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 3</div></div><div class='meta-row'><div><b>DoC:</b> 169</div><div><b>SoH:</b> 337</div></div><div><b>Status:</b> Broken: XL, XXL</div><div><b>PO Status:</b> 319</div></div></div>
-<div class='card' data-art='Kurtas' data-doc='62'><div class='img-wrap'><a href='https://www.myntra.com/24788256' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2023/9/2/03889fec-24b1-434b-a3cd-192181000f6adefault.jpg'></a><div class='overlay'>4.5
-|
-50 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKAAW231031_MV</div><div><span class='label'>Myntra id:</span> 24788256</div><div class='meta-row'><div><b>MTD:</b> 5</div><div><b>DRR:</b> 3</div></div><div class='meta-row'><div><b>DoC:</b> 62</div><div><b>SoH:</b> 185</div></div><div><b>Status:</b> Broken: XXL</div><div><b>PO Status:</b> 16</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='145'><div class='img-wrap'><a href='https://www.myntra.com/30917190' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/SEPTEMBER/9/vWOK11uG_2fe2f7e5002f48eabe7047c91aaaac5b.jpg'></a><div class='overlay'>4
-|
-20 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW24380_OW</div><div><span class='label'>Myntra id:</span> 30917190</div><div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 3</div></div><div class='meta-row'><div><b>DoC:</b> 145</div><div><b>SoH:</b> 290</div></div><div><b>Status:</b> Broken: XXL</div><div><b>PO Status:</b> 3</div></div></div>
-<div class='card' data-art='Tops' data-doc='100'><div class='img-wrap'><a href='https://www.myntra.com/14602034' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/productimage/2021/6/22/030f53a2-61aa-43c5-b6af-893cc2f0518b1624380790272-1.jpg'></a><div class='overlay'>4.1
-|
-1.4k Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> Topknm-13021</div><div><span class='label'>Myntra id:</span> 14602034</div><div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 100</div><div><b>SoH:</b> 200</div></div><div><b>Status:</b> Broken: M, L</div><div><b>PO Status:</b> 739</div></div></div>
-<div class='card' data-art='Kurtas' data-doc='12'><div class='img-wrap'><a href='https://www.myntra.com/37622461' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/OCTOBER/27/PTcUA0G0_c68cd171b038446c9931bf6a11044faa.jpg'></a><div class='overlay'>No-Rating</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKAAW25611_MN</div><div><span class='label'>Myntra id:</span> 37622461</div><div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 12</div><div><b>SoH:</b> 12</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> 2</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='10'><div class='img-wrap'><a href='https://www.myntra.com/37440004' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/OCTOBER/10/0QvMDdYo_93a3b5f00a134eef977645114ab2261f.jpg'></a><div class='overlay'>3.4
-|
-7 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW25634_GN</div><div><span class='label'>Myntra id:</span> 37440004</div><div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 10</div><div><b>SoH:</b> 10</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> 2</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='103'><div class='img-wrap'><a href='https://www.myntra.com/25235372' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2023/9/25/e3eba3d4-4f4e-4b00-bfda-e4f04d3b3811default.jpg'></a><div class='overlay'>3.9
-|
-445 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW231343_PL</div><div><span class='label'>Myntra id:</span> 25235372</div><div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 103</div><div><b>SoH:</b> 205</div></div><div><b>Status:</b> Broken: L, XL</div><div><b>PO Status:</b> 25</div></div></div>
-<div class='card' data-art='Kurtas' data-doc='158'><div class='img-wrap'><a href='https://www.myntra.com/24788246' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/24788246/2023/9/2/ee131fba-7438-427d-9ada-14480357af6f1693666183156IshinWomenMauveGeometricKeyholeNeckThreadWorkJacquardKurta1.jpg'></a><div class='overlay'>4.1
-|
-63 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKAAW231039_MV</div><div><span class='label'>Myntra id:</span> 24788246</div><div class='meta-row'><div><b>MTD:</b> 5</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 158</div><div><b>SoH:</b> 475</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 40</div></div></div>
-<div class='card' data-art='Kurtas' data-doc='61'><div class='img-wrap'><a href='https://www.myntra.com/24788200' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/24788200/2023/9/2/6116208f-48c1-41d7-9234-b709406a966f1693667366909IshinWomenCharcoalJacquardKurta1.jpg'></a><div class='overlay'>3.9
-|
-86 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKAAW231027_CH</div><div><span class='label'>Myntra id:</span> 24788200</div><div class='meta-row'><div><b>MTD:</b> 4</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 61</div><div><b>SoH:</b> 121</div></div><div><b>Status:</b> Broken: L, XL, XXL</div><div><b>PO Status:</b> 11</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='15'><div class='img-wrap'><a href='https://www.myntra.com/37360169' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/OCTOBER/6/LLLNyC2C_aef65d0ee4204ce1bc73e3aca20081f6.jpg'></a><div class='overlay'>2.6
-|
-5 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW25647_BL</div><div><span class='label'>Myntra id:</span> 37360169</div><div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 15</div><div><b>SoH:</b> 15</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> 7</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='392'><div class='img-wrap'><a href='https://www.myntra.com/25250252' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/25250252/2023/9/29/045b2881-4235-47eb-a7f1-51162450f2d01695968189856IshinWomenTealEthnicMotifsEmbroideredRegularThreadWorkVelvet1.jpg'></a><div class='overlay'>No-Rating</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW231197_TL</div><div><span class='label'>Myntra id:</span> 25250252</div><div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 392</div><div><b>SoH:</b> 392</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 3</div></div></div>
-<div class='card' data-art='Earrings' data-doc='5'><div class='img-wrap'><a href='https://www.myntra.com/37509673' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/OCTOBER/16/5FJY9J7C_831d3cb5a30a4bc2ab488d1878d4a50c.jpg'></a><div class='overlay'>No-Rating</div></div><div class='meta'><div><span class='label'>STYLE:</span> ER-IS-10278</div><div><span class='label'>Myntra id:</span> 37509673</div><div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 5</div><div><b>SoH:</b> 5</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> 15</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='18'><div class='img-wrap'><a href='https://www.myntra.com/25424684' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/25424684/2023/10/10/1c7b6a9d-a73b-4153-9bee-8a6bc416b2e31696927234404IshinWomenMaroonEthnicMotifsEmbroideredRegularThreadWorkVelv1.jpg'></a><div class='overlay'>4
-|
-106 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKTAW231195_MN</div><div><span class='label'>Myntra id:</span> 25424684</div><div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 18</div><div><b>SoH:</b> 18</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> 1</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='29'><div class='img-wrap'><a href='https://www.myntra.com/37936818' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/NOVEMBER/13/6FTkOSSR_0a86258221514c4bb08752c5280efc59.jpg'></a><div class='overlay'>No-Rating</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW25645_GN</div><div><span class='label'>Myntra id:</span> 37936818</div><div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 29</div><div><b>SoH:</b> 29</div></div><div><b>Status:</b> Broken: S, L, XL, XXL</div><div><b>PO Status:</b> 5</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='828'><div class='img-wrap'><a href='https://www.myntra.com/29066562' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/29066562/2024/4/19/8dbe2dc7-4e0b-42f3-9a31-341ec5251e701713524434398KurtaSets1.jpg'></a><div class='overlay'>4.3
-|
-1.1k Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDS24174_OW</div><div><span class='label'>Myntra id:</span> 29066562</div><div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 828</div><div><b>SoH:</b> 828</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 334</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='8'><div class='img-wrap'><a href='https://www.myntra.com/32059577' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/DECEMBER/23/8svnR87z_4522247bfce44642a9c16ef07410cd7c.jpg'></a><div class='overlay'>3.9
-|
-100 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKTAW24542_BK</div><div><span class='label'>Myntra id:</span> 32059577</div><div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 8</div><div><b>SoH:</b> 8</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> 8</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='152'><div class='img-wrap'><a href='https://www.myntra.com/31018799' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/SEPTEMBER/17/X7O214Rv_7f576d775e78403d9fbc149b483b3abf.jpg'></a><div class='overlay'>4.4
-|
-490 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW24290_NV</div><div><span class='label'>Myntra id:</span> 31018799</div><div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 152</div><div><b>SoH:</b> 152</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 299</div></div></div>
-<div class='card' data-art='Dresses' data-doc='347'><div class='img-wrap'><a href='https://www.myntra.com/32443515' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2025/JANUARY/21/7K6IeD4L_5c3497670b584aca8d3a7b07bee6e2d4.jpg'></a><div class='overlay'>4.4
-|
-108 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWDRAW24365_RD</div><div><span class='label'>Myntra id:</span> 32443515</div><div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 347</div><div><b>SoH:</b> 347</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 55</div></div></div>
-<div class='card' data-art='Kurtas' data-doc='113'><div class='img-wrap'><a href='https://www.myntra.com/24788230' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2023/9/2/f2b7a384-9756-4f36-a873-20c6e58d73d8default.jpg'></a><div class='overlay'>4.4
-|
-95 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKAAW231019_PN</div><div><span class='label'>Myntra id:</span> 24788230</div><div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 113</div><div><b>SoH:</b> 226</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 1</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='17'><div class='img-wrap'><a href='https://www.myntra.com/37440002' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/OCTOBER/17/nhkMszBr_c81684c049c547d58a24ed53e81e8612.jpg'></a><div class='overlay'>4.4
-|
-42 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW24983_BL</div><div><span class='label'>Myntra id:</span> 37440002</div><div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 17</div><div><b>SoH:</b> 17</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='1656'><div class='img-wrap'><a href='https://www.myntra.com/31384819' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/OCTOBER/22/Y6Y9JGCp_0787e4df68204acb939bb0446d127881.jpg'></a><div class='overlay'>4.1
-|
-501 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW24377_OR</div><div><span class='label'>Myntra id:</span> 31384819</div><div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 1656</div><div><b>SoH:</b> 1656</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 774</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='73'><div class='img-wrap'><a href='https://www.myntra.com/37440005' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/NOVEMBER/14/Pqdci30q_2fa8bf897e4b4741b24cfbbb29153d2f.jpg'></a><div class='overlay'>No-Rating</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW25644_PN</div><div><span class='label'>Myntra id:</span> 37440005</div><div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 73</div><div><b>SoH:</b> 73</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 8</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='222'><div class='img-wrap'><a href='https://www.myntra.com/13755686' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/productimage/2021/2/25/65016aa8-7cff-41ce-86b7-b754f466780a1614233300699-1.jpg'></a><div class='overlay'>4.3
-|
-1.8k Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> Kplpm-8052</div><div><span class='label'>Myntra id:</span> 13755686</div><div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 222</div><div><b>SoH:</b> 222</div></div><div><b>Status:</b> Broken: S, M</div><div><b>PO Status:</b> 150</div></div></div>
-<div class='card' data-art='Kurtas' data-doc='71'><div class='img-wrap'><a href='https://www.myntra.com/37622451' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/NOVEMBER/14/GMHVqCrW_afe2ff0dcb5142e3b1e6380cf8087e89.jpg'></a><div class='overlay'>No-Rating</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKAAW25606_BK</div><div><span class='label'>Myntra id:</span> 37622451</div><div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 71</div><div><b>SoH:</b> 71</div></div><div><b>Status:</b> Broken: M</div><div><b>PO Status:</b> 8</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='8'><div class='img-wrap'><a href='https://www.myntra.com/32041466' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/DECEMBER/20/oax4dsSo_d6782656b9d44c5488642bacf0e5430c.jpg'></a><div class='overlay'>3.7
-|
-211 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKTAW24761_BL</div><div><span class='label'>Myntra id:</span> 32041466</div><div class='meta-row'><div><b>MTD:</b> 4</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 8</div><div><b>SoH:</b> 16</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='10'><div class='img-wrap'><a href='https://www.myntra.com/37936811' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/NOVEMBER/13/umqFZsPZ_81fab3bc7eb24b459e492643fc3e8053.jpg'></a><div class='overlay'>No-Rating</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKTAW25641_NV</div><div><span class='label'>Myntra id:</span> 37936811</div><div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 10</div><div><b>SoH:</b> 20</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> 8</div></div></div>
-<div class='card' data-art='Kurtas' data-doc='42'><div class='img-wrap'><a href='https://www.myntra.com/24788242' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2023/9/2/ffb8693a-ce9e-4342-af60-ad1d5bcb13fddefault.jpg'></a><div class='overlay'>4.3
-|
-24 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKAAW231001_BK</div><div><span class='label'>Myntra id:</span> 24788242</div><div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 42</div><div><b>SoH:</b> 84</div></div><div><b>Status:</b> Broken: XL, XXL</div><div><b>PO Status:</b> 6</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='14'><div class='img-wrap'><a href='https://www.myntra.com/32041473' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/DECEMBER/20/qXFht9Tz_c09c98af629c4088ae1fa1cae026a4c6.jpg'></a><div class='overlay'>3.8
-|
-84 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW24548_PN</div><div><span class='label'>Myntra id:</span> 32041473</div><div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 14</div><div><b>SoH:</b> 14</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='129'><div class='img-wrap'><a href='https://www.myntra.com/25235332' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/25235332/2023/9/26/3e171137-3664-4183-aa68-f24c1f63d07d1695709654364KurtaSets1.jpg'></a><div class='overlay'>3.9
-|
-173 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW231199_MN</div><div><span class='label'>Myntra id:</span> 25235332</div><div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 2</div></div><div class='meta-row'><div><b>DoC:</b> 129</div><div><b>SoH:</b> 129</div></div><div><b>Status:</b> Broken: L, XL, XXL</div><div><b>PO Status:</b> 13</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='102'><div class='img-wrap'><a href='https://www.myntra.com/30068344' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/6/28/a2367c9c-7739-4f57-9094-72443839275adefault.jpg'></a><div class='overlay'>3.8
-|
-266 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDS24050_GR</div><div><span class='label'>Myntra id:</span> 30068344</div><div class='meta-row'><div><b>MTD:</b> 6</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 102</div><div><b>SoH:</b> 306</div></div><div><b>Status:</b> Broken: XXL</div><div><b>PO Status:</b> 420</div></div></div>
-<div class='card' data-art='Ring' data-doc='32'><div class='img-wrap'><a href='https://www.myntra.com/35248643' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2025/JUNE/27/5mWJIe0n_95ba5fde1cc444a195393d0ee9ac47aa.jpg'></a><div class='overlay'>No-Rating</div></div><div class='meta'><div><span class='label'>STYLE:</span> RG-IS-SL-10082</div><div><span class='label'>Myntra id:</span> 35248643</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 32</div><div><b>SoH:</b> 32</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='10'><div class='img-wrap'><a href='https://www.myntra.com/37936809' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/NOVEMBER/13/mZNLzlAm_14e0e1c3811c4f68816761cec6740b15.jpg'></a><div class='overlay'>No-Rating</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKTAW25642_BK</div><div><span class='label'>Myntra id:</span> 37936809</div><div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 10</div><div><b>SoH:</b> 20</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> 9</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='413'><div class='img-wrap'><a href='https://www.myntra.com/31384782' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/OCTOBER/22/IJ4ZhviX_8a4e27ce989d4b5aa99397c98ecd9f6e.jpg'></a><div class='overlay'>4.2
-|
-81 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW24533_OW</div><div><span class='label'>Myntra id:</span> 31384782</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 413</div><div><b>SoH:</b> 413</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 180</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='84'><div class='img-wrap'><a href='https://www.myntra.com/36824370' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/OCTOBER/17/NQFy7kGc_44e2e9709f1d46ce86861099d65042b6.jpg'></a><div class='overlay'>4
-|
-14 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW24993_BL</div><div><span class='label'>Myntra id:</span> 36824370</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 84</div><div><b>SoH:</b> 84</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='402'><div class='img-wrap'><a href='https://www.myntra.com/31384786' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/OCTOBER/22/5ciHes49_2b80cbb275674623b00041a318fab084.jpg'></a><div class='overlay'>4.3
-|
-92 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW24371_MS</div><div><span class='label'>Myntra id:</span> 31384786</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 402</div><div><b>SoH:</b> 402</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 90</div></div></div>
-<div class='card' data-art='Kurtas' data-doc='10'><div class='img-wrap'><a href='https://www.myntra.com/37622452' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/OCTOBER/27/zGYkWsDX_1a4012ff61854d06a80b9af8aeeebb12.jpg'></a><div class='overlay'>No-Rating</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKAAW25605_BK</div><div><span class='label'>Myntra id:</span> 37622452</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 10</div><div><b>SoH:</b> 10</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> 24</div></div></div>
-<div class='card' data-art='Tops' data-doc='465'><div class='img-wrap'><a href='https://www.myntra.com/13747892' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/productimage/2021/2/24/f2276bc6-31b8-414b-babe-96d600112d341614153959612-1.jpg'></a><div class='overlay'>3.8
-|
-219 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> Topaj-10019</div><div><span class='label'>Myntra id:</span> 13747892</div><div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 465</div><div><b>SoH:</b> 465</div></div><div><b>Status:</b> Broken: XXL</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='186'><div class='img-wrap'><a href='https://www.myntra.com/17724678' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/17724678/2022/4/14/6a28d58b-098a-48ae-9015-b7a6bc5e0b641649935334161-Ishin-Womens-Yellow-Embroidered-A-Line-Kurta-with-Sharara--D-1.jpg'></a><div class='overlay'>4.3
-|
-884 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSD070_YL</div><div><span class='label'>Myntra id:</span> 17724678</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 186</div><div><b>SoH:</b> 186</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 294</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='1034'><div class='img-wrap'><a href='https://www.myntra.com/25516164' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/25516164/2023/10/17/24fed97d-35b4-48ee-9323-a41ec1439e381697538962391IshinWomenWhiteEthnicMotifsEmbroideredHighSlitMirrorWorkPure1.jpg'></a><div class='overlay'>4.1
-|
-214 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW231205_OW</div><div><span class='label'>Myntra id:</span> 25516164</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 1034</div><div><b>SoH:</b> 1034</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Earrings' data-doc='31'><div class='img-wrap'><a href='https://www.myntra.com/35248769' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2025/JUNE/27/kfx6JscU_1b93e88306804a0fae946aa610b5a0b9.jpg'></a><div class='overlay'>No-Rating</div></div><div class='meta'><div><span class='label'>STYLE:</span> ER-IS-SL-10097</div><div><span class='label'>Myntra id:</span> 35248769</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 31</div><div><b>SoH:</b> 31</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='1216'><div class='img-wrap'><a href='https://www.myntra.com/31958874' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/DECEMBER/13/3D2lhLQj_27c9a8b8aa45420baaa51f58a179fdd7.jpg'></a><div class='overlay'>4.3
-|
-1.2k Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDS24173_PL</div><div><span class='label'>Myntra id:</span> 31958874</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 1216</div><div><b>SoH:</b> 1216</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 1</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='10'><div class='img-wrap'><a href='https://www.myntra.com/37439241' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/NOVEMBER/14/8qjyjMTf_64aaa78552604ab0ad36dfa3be7eafa7.jpg'></a><div class='overlay'>3.6
-|
-8 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW25636_MN</div><div><span class='label'>Myntra id:</span> 37439241</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 10</div><div><b>SoH:</b> 10</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> 5</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='30'><div class='img-wrap'><a href='https://www.myntra.com/32041447' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/DECEMBER/20/s41ywAop_3ad67f367cc64729bb2fe22bcf955034.jpg'></a><div class='overlay'>4
-|
-121 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW24757_PL</div><div><span class='label'>Myntra id:</span> 32041447</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 30</div><div><b>SoH:</b> 30</div></div><div><b>Status:</b> Broken: S, L, XL, XXL</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='215'><div class='img-wrap'><a href='https://www.myntra.com/30875178' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/SEPTEMBER/5/mNc28CiE_bf66812901a5440fb9cbfe02fd16ac2b.jpg'></a><div class='overlay'>4
-|
-73 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW24316_OW</div><div><span class='label'>Myntra id:</span> 30875178</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 215</div><div><b>SoH:</b> 215</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 1047</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='13'><div class='img-wrap'><a href='https://www.myntra.com/32041455' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/DECEMBER/20/vuXGs7lR_4f032039728f4f87bd41301eb4101e3f.jpg'></a><div class='overlay'>4.1
-|
-130 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW24754_CR</div><div><span class='label'>Myntra id:</span> 32041455</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 13</div><div><b>SoH:</b> 13</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> 59</div></div></div>
-<div class='card' data-art='Kurtas' data-doc='30'><div class='img-wrap'><a href='https://www.myntra.com/37622455' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/OCTOBER/27/CWUrFENW_50bd1b14bc4b4370bb0060f6450cec5b.jpg'></a><div class='overlay'>No-Rating</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKAAW25604_MN</div><div><span class='label'>Myntra id:</span> 37622455</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 30</div><div><b>SoH:</b> 30</div></div><div><b>Status:</b> Broken: M, L, XL, XXL</div><div><b>PO Status:</b> 1</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='19'><div class='img-wrap'><a href='https://www.myntra.com/32041456' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/DECEMBER/20/DkVdGAgA_54d95e854311493db7445d06136a58dd.jpg'></a><div class='overlay'>4.1
-|
-133 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW24753_PL</div><div><span class='label'>Myntra id:</span> 32041456</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 19</div><div><b>SoH:</b> 19</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> 1</div></div></div>
-<div class='card' data-art='Co-Ords' data-doc='456'><div class='img-wrap'><a href='https://www.myntra.com/24788588' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/24788588/2023/9/4/2f21238a-4411-4544-9df4-c2781381bb011693800197170Co-Ords1.jpg'></a><div class='overlay'>3.8
-|
-544 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKTAW231204_BK</div><div><span class='label'>Myntra id:</span> 24788588</div><div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 456</div><div><b>SoH:</b> 456</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 818</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='22'><div class='img-wrap'><a href='https://www.myntra.com/37942941' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/NOVEMBER/13/Vdz4FG7Q_0ee0839918e1419f877ec6a9ca103a1e.jpg'></a><div class='overlay'>No-Rating</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW25637_WN</div><div><span class='label'>Myntra id:</span> 37942941</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 22</div><div><b>SoH:</b> 22</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> 9</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='830'><div class='img-wrap'><a href='https://www.myntra.com/24278214' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/24278214/2023/8/2/1afd4b44-c48a-43d8-8c4f-25cf449541b01690962403741IshinWomenOffWhiteRegularGottaPattiKurtawithShararaWithDupat1.jpg'></a><div class='overlay'>3.7
-|
-577 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSD2003_OW</div><div><span class='label'>Myntra id:</span> 24278214</div><div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 830</div><div><b>SoH:</b> 1660</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 350</div></div></div>
-<div class='card' data-art='Kurtas' data-doc='7'><div class='img-wrap'><a href='https://www.myntra.com/24788224' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/24788224/2023/9/2/45ae69a2-ed15-477d-acaa-be821d9331731693667355448IshinWomenNavyBlueEthnicMotifsKeyholeNeckJacquardKurta1.jpg'></a><div class='overlay'>4
-|
-46 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKAAW231025_NV</div><div><span class='label'>Myntra id:</span> 24788224</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 7</div><div><b>SoH:</b> 7</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Mangalsutra' data-doc='30'><div class='img-wrap'><a href='https://www.myntra.com/35248716' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2025/JUNE/27/WOg4BXTd_a1b2a4e7467645eab1aab5a6115d1ff8.jpg'></a><div class='overlay'>No-Rating</div></div><div class='meta'><div><span class='label'>STYLE:</span> MG-IS-SL-10159</div><div><span class='label'>Myntra id:</span> 35248716</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 30</div><div><b>SoH:</b> 30</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='432'><div class='img-wrap'><a href='https://www.myntra.com/28927386' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/28927386/2024/4/15/5573bf11-d557-4b7a-a12d-642dd0ae89721713157142395KurtaSets1.jpg'></a><div class='overlay'>3.6
-|
-32 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDS24184_GN</div><div><span class='label'>Myntra id:</span> 28927386</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 432</div><div><b>SoH:</b> 432</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Mangalsutra' data-doc='28'><div class='img-wrap'><a href='https://www.myntra.com/35248803' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2025/JUNE/27/EHb8Bb7J_e18ee012c5994fcebc24713958cc388f.jpg'></a><div class='overlay'>No-Rating</div></div><div class='meta'><div><span class='label'>STYLE:</span> MG-IS-SL-10086</div><div><span class='label'>Myntra id:</span> 35248803</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 28</div><div><b>SoH:</b> 28</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Sarees' data-doc='VPL'><div class='img-wrap'><a href='https://www.myntra.com/28987556' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/28987556/2024/4/16/6f673b4a-675f-4562-bec9-3586dcc0c7a81713279568580Sarees1.jpg'></a><div class='overlay'>No-Rating</div></div><div class='meta'><div><span class='label'>STYLE:</span> OP-486-Yellow</div><div><span class='label'>Myntra id:</span> 28987556</div><div class='meta-row'><div><b>MTD:</b> 0</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> VPL</div><div><b>SoH:</b> 0</div></div><div><b>Status:</b> VPL</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='440'><div class='img-wrap'><a href='https://www.myntra.com/29371476' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/29371476/2024/6/13/ab0a3bf2-04c7-4eae-9253-25983d5c06a51718279179907IshinFloralPrintedRoundNeckMirrorWorkStraightKurtawithTrouse1.jpg'></a><div class='overlay'>4
-|
-287 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDS24062_RD</div><div><span class='label'>Myntra id:</span> 29371476</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 440</div><div><b>SoH:</b> 440</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 999</div></div></div>
-<div class='card' data-art='Dresses' data-doc='987'><div class='img-wrap'><a href='https://www.myntra.com/17349328' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/17349328/2022/4/14/3be0f2c6-364d-4431-98a3-5a51b31e72851649917252371-Ishin-Womens-Black-Embroidered-A-Line-Dress-8471649917251773-1.jpg'></a><div class='overlay'>4.1
-|
-1.2k Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> Topgdw-23008</div><div><span class='label'>Myntra id:</span> 17349328</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 987</div><div><b>SoH:</b> 987</div></div><div><b>Status:</b> Broken: XXL</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='555'><div class='img-wrap'><a href='https://www.myntra.com/29371530' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/29371530/2024/5/7/a16aa94a-56a4-4f10-bfa6-0496535c96931715042758732KurtaSets7.jpg'></a><div class='overlay'>3.9
-|
-126 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDS24388_YL</div><div><span class='label'>Myntra id:</span> 29371530</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 555</div><div><b>SoH:</b> 555</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='161'><div class='img-wrap'><a href='https://www.myntra.com/29066572' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/29066572/2024/4/19/d7141ac6-43df-44fe-b1c7-d084816ea6191713528359125KurtaSets1.jpg'></a><div class='overlay'>4
-|
-121 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDS24181_YL</div><div><span class='label'>Myntra id:</span> 29066572</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 161</div><div><b>SoH:</b> 161</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Dress Material' data-doc='VPL'><div class='img-wrap'><a href='https://www.myntra.com/30773656' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/AUGUST/28/Oh4jwXyi_d622b040751b4794b32d8b1d7b2bc046.jpg'></a><div class='overlay'>No-Rating</div></div><div class='meta'><div><span class='label'>STYLE:</span> MRFC11278B-Yellow</div><div><span class='label'>Myntra id:</span> 30773656</div><div class='meta-row'><div><b>MTD:</b> 0</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> VPL</div><div><b>SoH:</b> 0</div></div><div><b>Status:</b> VPL</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='481'><div class='img-wrap'><a href='https://www.myntra.com/13494312' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/productimage/2021/1/21/52a933a2-1ed7-4c17-914b-127bd500b7de1611206281371-1.jpg'></a><div class='overlay'>4.2
-|
-457 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> XyKplpm-5084D</div><div><span class='label'>Myntra id:</span> 13494312</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 481</div><div><b>SoH:</b> 481</div></div><div><b>Status:</b> Broken: M, XXL</div><div><b>PO Status:</b> 97</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='104'><div class='img-wrap'><a href='https://www.myntra.com/30917180' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/SEPTEMBER/9/QRXXMuEx_8001c9d3107d4276b74902fd47c1fc46.jpg'></a><div class='overlay'>3.9
-|
-30 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW24379_OW</div><div><span class='label'>Myntra id:</span> 30917180</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 104</div><div><b>SoH:</b> 104</div></div><div><b>Status:</b> Broken: XXL</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='862'><div class='img-wrap'><a href='https://www.myntra.com/29196962' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/29196962/2024/4/26/0ff218f7-2d40-46ba-85d6-7244864c4ec11714111754611IshinWomenFloralEmbroideredRegularThreadWorkKurtawithTrouser1.jpg'></a><div class='overlay'>4.2
-|
-166 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDS24179_PN</div><div><span class='label'>Myntra id:</span> 29196962</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 862</div><div><b>SoH:</b> 862</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='353'><div class='img-wrap'><a href='https://www.myntra.com/15980050' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/15980050/2021/11/24/5c57f89f-437a-42b0-a5bf-e14a68c109761637733998771-Ishin-Womens-Navy-Blue-Gotta-Patti-Embroidered-Anarkali-Pepl-1.jpg'></a><div class='overlay'>4.3
-|
-1.1k Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> Kpldsrd-19063</div><div><span class='label'>Myntra id:</span> 15980050</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 353</div><div><b>SoH:</b> 353</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 450</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='281'><div class='img-wrap'><a href='https://www.myntra.com/29286242' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/29286242/2024/6/25/4a850f10-9245-4889-b720-7e135ea0818b1719313207736-Ishin-V-Neck-Floral-Printed-Empire-Pure-Cotton-A-Line-Kurta--1.jpg'></a><div class='overlay'>4.1
-|
-83 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDS24358_BL</div><div><span class='label'>Myntra id:</span> 29286242</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 281</div><div><b>SoH:</b> 281</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 323</div></div></div>
-<div class='card' data-art='Burqas' data-doc='64'><div class='img-wrap'><a href='https://www.myntra.com/38854640' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/DECEMBER/22/jaOYU2Zd_13588c7068024b7aa62341a2ae9165c6.jpg'></a><div class='overlay'>No-Rating</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWABAW25785_BR</div><div><span class='label'>Myntra id:</span> 38854640</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 64</div><div><b>SoH:</b> 64</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 18</div></div></div>
-<div class='card' data-art='Dresses' data-doc='521'><div class='img-wrap'><a href='https://www.myntra.com/32443517' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2025/JANUARY/21/ApQr3Yns_510b47fd5b1b4bfca39149fb8e51c964.jpg'></a><div class='overlay'>4.5
-|
-110 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWDRAW24366_BK</div><div><span class='label'>Myntra id:</span> 32443517</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 521</div><div><b>SoH:</b> 521</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 357</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='1191'><div class='img-wrap'><a href='https://www.myntra.com/7578920' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/7578920/2018/10/24/7c13bddb-c4fa-4e21-a07d-6fcff9c0124f1540367431620-Ishin-Women-Kurta-Sets-1121540367431363-1.jpg'></a><div class='overlay'>3.6
-|
-39 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> Kurplkade-141</div><div><span class='label'>Myntra id:</span> 7578920</div><div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 1191</div><div><b>SoH:</b> 1191</div></div><div><b>Status:</b> Not Broken</div><div><b>PO Status:</b> 300</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='7'><div class='img-wrap'><a href='https://www.myntra.com/32660045' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2025/FEBRUARY/5/Ag9qOcR9_be816b80a6704302879725a0d87324ed.jpg'></a><div class='overlay'>4.2
-|
-1.9k Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW24004_GN</div><div><span class='label'>Myntra id:</span> 32660045</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 7</div><div><b>SoH:</b> 7</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='21'><div class='img-wrap'><a href='https://www.myntra.com/37936817' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/NOVEMBER/13/w2WAyIiZ_df6c9ab7ff234a508c399318fda02c19.jpg'></a><div class='overlay'>No-Rating</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWSDAW25653_MN</div><div><span class='label'>Myntra id:</span> 37936817</div><div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 21</div><div><b>SoH:</b> 21</div></div><div><b>Status:</b> Broken: S, M, L, XL, XXL</div><div><b>PO Status:</b> 6</div></div></div>
-<div class='card' data-art='Sarees' data-doc='VPL'><div class='img-wrap'><a href='https://www.myntra.com/33905936' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2025/APRIL/30/KmMAA9Ww_0ad3c5a228d949dd89848ec5c085e270.jpg'></a><div class='overlay'>No-Rating</div></div><div class='meta'><div><span class='label'>STYLE:</span> KRGR018-VIDHYA-CREAM</div><div><span class='label'>Myntra id:</span> 33905936</div><div class='meta-row'><div><b>MTD:</b> 0</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> VPL</div><div><b>SoH:</b> 0</div></div><div><b>Status:</b> VPL</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='70'><div class='img-wrap'><a href='https://www.myntra.com/15980528' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/15980528/2021/11/29/38b46d75-4e4e-485e-94e6-3dfebbe475f51638165846359-Ishin-Women-Lavender-Regular-Pure-Cotton-Kurta-with-Trousers-1.jpg'></a><div class='overlay'>4.3
-|
-1.2k Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> Kpldmvel-19061</div><div><span class='label'>Myntra id:</span> 15980528</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 70</div><div><b>SoH:</b> 70</div></div><div><b>Status:</b> Broken: M, L, XL</div><div><b>PO Status:</b> 417</div></div></div>
-<div class='card' data-art='Sarees' data-doc='VPL'><div class='img-wrap'><a href='https://www.myntra.com/34755400' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2025/JUNE/3/a6SNF3OK_612af616dcba469098ed1d7f0e321f74.jpg'></a><div class='overlay'>No-Rating</div></div><div class='meta'><div><span class='label'>STYLE:</span> KHAJANA_VOL1_NAVYBLUE-Navy Blue</div><div><span class='label'>Myntra id:</span> 34755400</div><div class='meta-row'><div><b>MTD:</b> 0</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> VPL</div><div><b>SoH:</b> 0</div></div><div><b>Status:</b> VPL</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Sarees' data-doc='VPL'><div class='img-wrap'><a href='https://www.myntra.com/34783633' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2025/JUNE/5/aRTjFYet_76dfc63cf01042508efb53bd55969f01.jpg'></a><div class='overlay'>No-Rating</div></div><div class='meta'><div><span class='label'>STYLE:</span> UNNATI_VOL1_BOTTLEGREEN</div><div><span class='label'>Myntra id:</span> 34783633</div><div class='meta-row'><div><b>MTD:</b> 0</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> VPL</div><div><b>SoH:</b> 0</div></div><div><b>Status:</b> VPL</div><div><b>PO Status:</b> No_Open_PO</div></div></div>
-<div class='card' data-art='Kurtas' data-doc='196'><div class='img-wrap'><a href='https://www.myntra.com/24788240' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/24788240/2023/9/2/cc269fa1-353f-4742-900f-57e297c015e81693668018265IshinWomenMauveEthnicMotifsJacquardKurta1.jpg'></a><div class='overlay'>4.5
-|
-46 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKAAW231043_MV</div><div><span class='label'>Myntra id:</span> 24788240</div><div class='meta-row'><div><b>MTD:</b> 5</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 196</div><div><b>SoH:</b> 588</div></div><div><b>Status:</b> Broken: M, XL, XXL</div><div><b>PO Status:</b> 8</div></div></div>
-<div class='card' data-art='Kurta Sets' data-doc='215'><div class='img-wrap'><a href='https://www.myntra.com/31006810' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/SEPTEMBER/16/ciR3nQCU_1642be8acf324f788ffcdea7dc89ff8a.jpg'></a><div class='overlay'>4
-|
-120 Ratings</div></div><div class='meta'><div><span class='label'>STYLE:</span> INWKTAW24327_OW</div><div><span class='label'>Myntra id:</span> 31006810</div><div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div><div class='meta-row'><div><b>DoC:</b> 215</div><div><b>SoH:</b> 215</div></div><div><b>Status:</b> Broken: S</div><div><b>PO Status:</b> 301</div></div></div>
+</div></div>
+<div class='ctrl'><select id='docSort' class='btn'><option value=''>Sort by DoC</option><option value='asc'>DoC ↑</option><option value='desc'>DoC ↓</option></select></div>
 </div>
-<script>const btn=document.getElementById('artBtn'),dd=document.getElementById('artDD');btn.onclick=()=>dd.classList.toggle('show');document.onclick=e=>{if(!btn.contains(e.target)&&!dd.contains(e.target))dd.classList.remove('show')};const all=document.getElementById('all'),arts=[...document.querySelectorAll('.art')];function apply(){let sel=arts.filter(x=>x.checked).map(x=>x.value);if(all.checked) sel=arts.map(x=>x.value);document.querySelectorAll('.card').forEach(c=>{c.style.display=sel.includes(c.dataset.art)?'':'none';});let s=document.getElementById('docSort').value;if(s){let v=[...document.querySelectorAll('.card')].filter(c=>c.style.display!=='none');v.sort((a,b)=>(parseFloat(a.dataset.doc)||0)-(parseFloat(b.dataset.doc)||0));if(s==='desc')v.reverse();v.forEach(x=>gallery.appendChild(x));}}all.onchange=()=>{arts.forEach(x=>x.checked=all.checked);apply()};arts.forEach(x=>x.onchange=()=>{all.checked=arts.every(y=>y.checked);apply()});docSort.onchange=apply;</script></body></html>
+<div id='gallery' class='gallery'>
+<div class='card' data-art='Kurta Sets' data-doc='28'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/25516162' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2023/10/17/a6b7a34b-0dc0-441e-bf6a-9d844d08782cdefault.jpg'></a>
+<div class='overlay'>4.2
+|
+1.9k Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW231206_BK</div>
+<div><span class='label'>Myntra id:</span> 25516162</div>
+<div class='meta-row'><div><b>MTD:</b> 69</div><div><b>DRR:</b> 39</div></div>
+<div class='meta-row'><div><b>DoC:</b> 28</div><div><b>SoH:</b> 474</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 1231</div>
+</div></div>
+<div class='card' data-art='Kurtas' data-doc='59'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/24788236' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/24788236/2023/9/2/7fa04a10-0c83-4a61-96e2-597b255e70081693665749566IshinWomenCharcoalEthnicMotifsThreadWorkJacquardKurta1.jpg'></a>
+<div class='overlay'>4.4
+|
+96 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKAAW231020_CH</div>
+<div><span class='label'>Myntra id:</span> 24788236</div>
+<div class='meta-row'><div><b>MTD:</b> 23</div><div><b>DRR:</b> 14</div></div>
+<div class='meta-row'><div><b>DoC:</b> 59</div><div><b>SoH:</b> 352</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 170</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='24'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/25235358' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/25235358/2023/9/26/8baa5d04-c10f-40c0-af2e-b45253c400171695716776644KurtaSets1.jpg'></a>
+<div class='overlay'>4.2
+|
+270 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW231198_NV</div>
+<div><span class='label'>Myntra id:</span> 25235358</div>
+<div class='meta-row'><div><b>MTD:</b> 27</div><div><b>DRR:</b> 14</div></div>
+<div class='meta-row'><div><b>DoC:</b> 24</div><div><b>SoH:</b> 167</div></div>
+<div><b>Status:</b> Broken: S, M, XXL</div>
+<div><b>PO Status:</b> 13</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='359'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/31137621' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/SEPTEMBER/26/KKaKW8qm_9c97c5baee70492480355e406e3a5198.jpg'></a>
+<div class='overlay'>4.1
+|
+638 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKTAW24233_YL</div>
+<div><span class='label'>Myntra id:</span> 31137621</div>
+<div class='meta-row'><div><b>MTD:</b> 21</div><div><b>DRR:</b> 12</div></div>
+<div class='meta-row'><div><b>DoC:</b> 359</div><div><b>SoH:</b> 1794</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 2138</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='20'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/25235376' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/25235376/2023/9/28/a730f51e-3ff4-458c-be4f-bce03df502d91695844337431IshinWomenNavyBlueEthnicMotifsEmbroideredRegularThreadWorkVe1.jpg'></a>
+<div class='overlay'>3.9
+|
+441 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW231200_NV</div>
+<div><span class='label'>Myntra id:</span> 25235376</div>
+<div class='meta-row'><div><b>MTD:</b> 23</div><div><b>DRR:</b> 11</div></div>
+<div class='meta-row'><div><b>DoC:</b> 20</div><div><b>SoH:</b> 117</div></div>
+<div><b>Status:</b> Broken: XXL</div>
+<div><b>PO Status:</b> 54</div>
+</div></div>
+<div class='card' data-art='Kurtas' data-doc='118'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/24788246' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/24788246/2023/9/2/ee131fba-7438-427d-9ada-14480357af6f1693666183156IshinWomenMauveGeometricKeyholeNeckThreadWorkJacquardKurta1.jpg'></a>
+<div class='overlay'>4.1
+|
+63 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKAAW231039_MV</div>
+<div><span class='label'>Myntra id:</span> 24788246</div>
+<div class='meta-row'><div><b>MTD:</b> 17</div><div><b>DRR:</b> 11</div></div>
+<div class='meta-row'><div><b>DoC:</b> 118</div><div><b>SoH:</b> 473</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 40</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='121'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/26729564' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/26729564/2023/12/30/a9739375-961d-43e4-8c6a-2edce2d99d351703941732757IshinWomenNavyBlueYokeDesignRegularVelvetKurtawithTrousersWi1.jpg'></a>
+<div class='overlay'>4
+|
+161 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW231342_NV</div>
+<div><span class='label'>Myntra id:</span> 26729564</div>
+<div class='meta-row'><div><b>MTD:</b> 20</div><div><b>DRR:</b> 10</div></div>
+<div class='meta-row'><div><b>DoC:</b> 121</div><div><b>SoH:</b> 605</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 8</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='70'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/25250248' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/25250248/2023/9/28/086422be-3215-4047-b67a-ead87f2415351695901214730IshinWomenGreenEthnicMotifsEmbroideredRegularVelvetKurtawith1.jpg'></a>
+<div class='overlay'>4.1
+|
+518 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW231337_GN</div>
+<div><span class='label'>Myntra id:</span> 25250248</div>
+<div class='meta-row'><div><b>MTD:</b> 17</div><div><b>DRR:</b> 7</div></div>
+<div class='meta-row'><div><b>DoC:</b> 70</div><div><b>SoH:</b> 280</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 45</div>
+</div></div>
+<div class='card' data-art='Kurtas' data-doc='111'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/24788248' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/24788248/2023/9/4/df6b4d1d-ab7a-4370-b23e-cfbbaaca6bf51693800221402IshinWomenMaroonEthnicMotifsEmbroideredKeyholeNeckJacquardKu1.jpg'></a>
+<div class='overlay'>4.5
+|
+40 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKAAW231007_WN</div>
+<div><span class='label'>Myntra id:</span> 24788248</div>
+<div class='meta-row'><div><b>MTD:</b> 18</div><div><b>DRR:</b> 7</div></div>
+<div class='meta-row'><div><b>DoC:</b> 111</div><div><b>SoH:</b> 556</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 67</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='13'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/32041462' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/DECEMBER/20/ar7STxoF_b4e136bb1bac42e694fcdec493849d85.jpg'></a>
+<div class='overlay'>3.8
+|
+98 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKTAW24543_OW</div>
+<div><span class='label'>Myntra id:</span> 32041462</div>
+<div class='meta-row'><div><b>MTD:</b> 9</div><div><b>DRR:</b> 6</div></div>
+<div class='meta-row'><div><b>DoC:</b> 13</div><div><b>SoH:</b> 25</div></div>
+<div><b>Status:</b> Broken: S, M, XL, XXL</div>
+<div><b>PO Status:</b> 26</div>
+</div></div>
+<div class='card' data-art='Kurtas' data-doc='154'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/24788210' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/24788210/2023/9/2/1243b3da-5f02-4ac7-b2d7-16cb8b25b2881693666028149IshinWomenGreenEthnicMotifsKeyholeNeckJacquardKurta1.jpg'></a>
+<div class='overlay'>4.1
+|
+61 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKAAW231028_GN</div>
+<div><span class='label'>Myntra id:</span> 24788210</div>
+<div class='meta-row'><div><b>MTD:</b> 11</div><div><b>DRR:</b> 5</div></div>
+<div class='meta-row'><div><b>DoC:</b> 154</div><div><b>SoH:</b> 461</div></div>
+<div><b>Status:</b> Broken: M</div>
+<div><b>PO Status:</b> 16</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='15'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/32041466' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/DECEMBER/20/oax4dsSo_d6782656b9d44c5488642bacf0e5430c.jpg'></a>
+<div class='overlay'>3.7
+|
+211 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKTAW24761_BL</div>
+<div><span class='label'>Myntra id:</span> 32041466</div>
+<div class='meta-row'><div><b>MTD:</b> 9</div><div><b>DRR:</b> 4</div></div>
+<div class='meta-row'><div><b>DoC:</b> 15</div><div><b>SoH:</b> 29</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='104'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/32059581' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/DECEMBER/23/Dtx8FTXT_5701bd48213849449b6dab84134c8608.jpg'></a>
+<div class='overlay'>4
+|
+126 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW24758_GN</div>
+<div><span class='label'>Myntra id:</span> 32059581</div>
+<div class='meta-row'><div><b>MTD:</b> 11</div><div><b>DRR:</b> 4</div></div>
+<div class='meta-row'><div><b>DoC:</b> 104</div><div><b>SoH:</b> 312</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurtas' data-doc='195'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/24788240' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/24788240/2023/9/2/cc269fa1-353f-4742-900f-57e297c015e81693668018265IshinWomenMauveEthnicMotifsJacquardKurta1.jpg'></a>
+<div class='overlay'>4.5
+|
+46 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKAAW231043_MV</div>
+<div><span class='label'>Myntra id:</span> 24788240</div>
+<div class='meta-row'><div><b>MTD:</b> 13</div><div><b>DRR:</b> 4</div></div>
+<div class='meta-row'><div><b>DoC:</b> 195</div><div><b>SoH:</b> 586</div></div>
+<div><b>Status:</b> Broken: M, XL, XXL</div>
+<div><b>PO Status:</b> 8</div>
+</div></div>
+<div class='card' data-art='Kurtas' data-doc='62'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/24788256' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2023/9/2/03889fec-24b1-434b-a3cd-192181000f6adefault.jpg'></a>
+<div class='overlay'>4.5
+|
+50 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKAAW231031_MV</div>
+<div><span class='label'>Myntra id:</span> 24788256</div>
+<div class='meta-row'><div><b>MTD:</b> 10</div><div><b>DRR:</b> 4</div></div>
+<div class='meta-row'><div><b>DoC:</b> 62</div><div><b>SoH:</b> 185</div></div>
+<div><b>Status:</b> Broken: XXL</div>
+<div><b>PO Status:</b> 16</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='3'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/32041470' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/DECEMBER/20/ueBaZ6QD_6eba56e29809448185b6fd674718dfb7.jpg'></a>
+<div class='overlay'>3.8
+|
+210 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKTAW24759_BK</div>
+<div><span class='label'>Myntra id:</span> 32041470</div>
+<div class='meta-row'><div><b>MTD:</b> 14</div><div><b>DRR:</b> 4</div></div>
+<div class='meta-row'><div><b>DoC:</b> 3</div><div><b>SoH:</b> 12</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Dresses' data-doc='1077'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/13901756' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/13901756/2022/5/10/016438e0-e11f-4022-928c-fd8286b0cd221652163797752-Ishin-Off-White-Self-Design-Fit-and-Flare-Dress-816521637971-1.jpg'></a>
+<div class='overlay'>4.2
+|
+7.8k Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> Topknm-11017</div>
+<div><span class='label'>Myntra id:</span> 13901756</div>
+<div class='meta-row'><div><b>MTD:</b> 4</div><div><b>DRR:</b> 3</div></div>
+<div class='meta-row'><div><b>DoC:</b> 1077</div><div><b>SoH:</b> 1077</div></div>
+<div><b>Status:</b> Broken: XXL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurtas' data-doc='62'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/24788200' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/24788200/2023/9/2/6116208f-48c1-41d7-9234-b709406a966f1693667366909IshinWomenCharcoalJacquardKurta1.jpg'></a>
+<div class='overlay'>3.9
+|
+86 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKAAW231027_CH</div>
+<div><span class='label'>Myntra id:</span> 24788200</div>
+<div class='meta-row'><div><b>MTD:</b> 7</div><div><b>DRR:</b> 3</div></div>
+<div class='meta-row'><div><b>DoC:</b> 62</div><div><b>SoH:</b> 123</div></div>
+<div><b>Status:</b> Broken: L, XL, XXL</div>
+<div><b>PO Status:</b> 11</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='10'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37439241' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/NOVEMBER/14/8qjyjMTf_64aaa78552604ab0ad36dfa3be7eafa7.jpg'></a>
+<div class='overlay'>3.6
+|
+8 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW25636_MN</div>
+<div><span class='label'>Myntra id:</span> 37439241</div>
+<div class='meta-row'><div><b>MTD:</b> 4</div><div><b>DRR:</b> 3</div></div>
+<div class='meta-row'><div><b>DoC:</b> 10</div><div><b>SoH:</b> 10</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> 5</div>
+</div></div>
+<div class='card' data-art='Kurtas' data-doc='12'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/24788208' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2023/9/2/4627a577-3d10-4018-9de6-ad49f585b20adefault.jpg'></a>
+<div class='overlay'>4
+|
+45 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKAAW231024_MV</div>
+<div><span class='label'>Myntra id:</span> 24788208</div>
+<div class='meta-row'><div><b>MTD:</b> 4</div><div><b>DRR:</b> 3</div></div>
+<div class='meta-row'><div><b>DoC:</b> 12</div><div><b>SoH:</b> 12</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> 20</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='105'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/25235372' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2023/9/25/e3eba3d4-4f4e-4b00-bfda-e4f04d3b3811default.jpg'></a>
+<div class='overlay'>3.9
+|
+445 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW231343_PL</div>
+<div><span class='label'>Myntra id:</span> 25235372</div>
+<div class='meta-row'><div><b>MTD:</b> 7</div><div><b>DRR:</b> 3</div></div>
+<div class='meta-row'><div><b>DoC:</b> 105</div><div><b>SoH:</b> 210</div></div>
+<div><b>Status:</b> Broken: L, XL</div>
+<div><b>PO Status:</b> 25</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='11'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37936811' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/NOVEMBER/13/umqFZsPZ_81fab3bc7eb24b459e492643fc3e8053.jpg'></a>
+<div class='overlay'>No-Rating</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKTAW25641_NV</div>
+<div><span class='label'>Myntra id:</span> 37936811</div>
+<div class='meta-row'><div><b>MTD:</b> 7</div><div><b>DRR:</b> 3</div></div>
+<div class='meta-row'><div><b>DoC:</b> 11</div><div><b>SoH:</b> 22</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> 8</div>
+</div></div>
+<div class='card' data-art='Kurtas' data-doc='9'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37622452' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/OCTOBER/27/zGYkWsDX_1a4012ff61854d06a80b9af8aeeebb12.jpg'></a>
+<div class='overlay'>No-Rating</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKAAW25605_BK</div>
+<div><span class='label'>Myntra id:</span> 37622452</div>
+<div class='meta-row'><div><b>MTD:</b> 4</div><div><b>DRR:</b> 2</div></div>
+<div class='meta-row'><div><b>DoC:</b> 9</div><div><b>SoH:</b> 9</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> 24</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='23'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/32126817' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/DECEMBER/28/J4JmubFm_d75ad3d9a75d4732986e13f8a7fa60a3.jpg'></a>
+<div class='overlay'>4.2
+|
+290 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW24650_MN</div>
+<div><span class='label'>Myntra id:</span> 32126817</div>
+<div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 2</div></div>
+<div class='meta-row'><div><b>DoC:</b> 23</div><div><b>SoH:</b> 23</div></div>
+<div><b>Status:</b> Broken: S, M, L, XXL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='21'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37936809' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/NOVEMBER/13/mZNLzlAm_14e0e1c3811c4f68816761cec6740b15.jpg'></a>
+<div class='overlay'>No-Rating</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKTAW25642_BK</div>
+<div><span class='label'>Myntra id:</span> 37936809</div>
+<div class='meta-row'><div><b>MTD:</b> 5</div><div><b>DRR:</b> 2</div></div>
+<div class='meta-row'><div><b>DoC:</b> 21</div><div><b>SoH:</b> 21</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> 9</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='66'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/26729562' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/26729562/2023/12/30/171790cb-6372-4d35-8771-0d298ba29c021703940891502IshinWomenBlackEmbroideredRegularThreadWorkVelvetKurtawithTr1.jpg'></a>
+<div class='overlay'>4.1
+|
+98 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW231201_BK</div>
+<div><span class='label'>Myntra id:</span> 26729562</div>
+<div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 2</div></div>
+<div class='meta-row'><div><b>DoC:</b> 66</div><div><b>SoH:</b> 66</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL</div>
+<div><b>PO Status:</b> 6</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='12'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37439240' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/OCTOBER/10/hkjyPuaM_c1a3d9c512d846ba8bfb17843be688a6.jpg'></a>
+<div class='overlay'>3.2
+|
+6 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW25635_PL</div>
+<div><span class='label'>Myntra id:</span> 37439240</div>
+<div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 2</div></div>
+<div class='meta-row'><div><b>DoC:</b> 12</div><div><b>SoH:</b> 12</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> 9</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='64'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/25235332' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/25235332/2023/9/26/3e171137-3664-4183-aa68-f24c1f63d07d1695709654364KurtaSets1.jpg'></a>
+<div class='overlay'>3.9
+|
+173 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW231199_MN</div>
+<div><span class='label'>Myntra id:</span> 25235332</div>
+<div class='meta-row'><div><b>MTD:</b> 6</div><div><b>DRR:</b> 2</div></div>
+<div class='meta-row'><div><b>DoC:</b> 64</div><div><b>SoH:</b> 128</div></div>
+<div><b>Status:</b> Broken: L, XL, XXL</div>
+<div><b>PO Status:</b> 13</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='442'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/25235326' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/25235326/2023/9/26/f3b571d2-9bd8-47cf-adae-5de9dc1d11ad1695713322709KurtaSets1.jpg'></a>
+<div class='overlay'>4
+|
+399 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW231339_PL</div>
+<div><span class='label'>Myntra id:</span> 25235326</div>
+<div class='meta-row'><div><b>MTD:</b> 9</div><div><b>DRR:</b> 2</div></div>
+<div class='meta-row'><div><b>DoC:</b> 442</div><div><b>SoH:</b> 884</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 7</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='17'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37942940' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/NOVEMBER/13/9SDTdaVd_6b32da655ae7490b9d8416f7ec56f36e.jpg'></a>
+<div class='overlay'>2.6
+|
+5 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW25646_WN</div>
+<div><span class='label'>Myntra id:</span> 37942940</div>
+<div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 2</div></div>
+<div class='meta-row'><div><b>DoC:</b> 17</div><div><b>SoH:</b> 17</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> 5</div>
+</div></div>
+<div class='card' data-art='Co-Ords' data-doc='459'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/24788588' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/24788588/2023/9/4/2f21238a-4411-4544-9df4-c2781381bb011693800197170Co-Ords1.jpg'></a>
+<div class='overlay'>3.8
+|
+544 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKTAW231204_BK</div>
+<div><span class='label'>Myntra id:</span> 24788588</div>
+<div class='meta-row'><div><b>MTD:</b> 4</div><div><b>DRR:</b> 2</div></div>
+<div class='meta-row'><div><b>DoC:</b> 459</div><div><b>SoH:</b> 459</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 818</div>
+</div></div>
+<div class='card' data-art='Co-Ords' data-doc='359'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/30875159' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/SEPTEMBER/5/wfKGPkv4_d683515df4884ac9b91c9a0ebbc03119.jpg'></a>
+<div class='overlay'>3.7
+|
+36 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKTAW24233_YL</div>
+<div><span class='label'>Myntra id:</span> 30875159</div>
+<div class='meta-row'><div><b>MTD:</b> 21</div><div><b>DRR:</b> 2</div></div>
+<div class='meta-row'><div><b>DoC:</b> 359</div><div><b>SoH:</b> 1794</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 2138</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='241'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/32422942' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2025/JANUARY/20/eEmYBJs1_4412fe8e4ab2419da8911acf08577b98.jpg'></a>
+<div class='overlay'>4.4
+|
+26 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWDRAW24441_BK</div>
+<div><span class='label'>Myntra id:</span> 32422942</div>
+<div class='meta-row'><div><b>MTD:</b> 7</div><div><b>DRR:</b> 2</div></div>
+<div class='meta-row'><div><b>DoC:</b> 241</div><div><b>SoH:</b> 482</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 812</div>
+</div></div>
+<div class='card' data-art='Dresses' data-doc='984'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/17349328' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/17349328/2022/4/14/3be0f2c6-364d-4431-98a3-5a51b31e72851649917252371-Ishin-Womens-Black-Embroidered-A-Line-Dress-8471649917251773-1.jpg'></a>
+<div class='overlay'>4.1
+|
+1.2k Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> Topgdw-23008</div>
+<div><span class='label'>Myntra id:</span> 17349328</div>
+<div class='meta-row'><div><b>MTD:</b> 4</div><div><b>DRR:</b> 2</div></div>
+<div class='meta-row'><div><b>DoC:</b> 984</div><div><b>SoH:</b> 984</div></div>
+<div><b>Status:</b> Broken: XXL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='390'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/25250252' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/25250252/2023/9/29/045b2881-4235-47eb-a7f1-51162450f2d01695968189856IshinWomenTealEthnicMotifsEmbroideredRegularThreadWorkVelvet1.jpg'></a>
+<div class='overlay'>No-Rating</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW231197_TL</div>
+<div><span class='label'>Myntra id:</span> 25250252</div>
+<div class='meta-row'><div><b>MTD:</b> 5</div><div><b>DRR:</b> 2</div></div>
+<div class='meta-row'><div><b>DoC:</b> 390</div><div><b>SoH:</b> 390</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 3</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='23'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/31384836' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/OCTOBER/22/rCiOlQXO_dfb41f6802ad4f9d9d6049c93360d921.jpg'></a>
+<div class='overlay'>4.3
+|
+79 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKTAW24380_WN</div>
+<div><span class='label'>Myntra id:</span> 31384836</div>
+<div class='meta-row'><div><b>MTD:</b> 5</div><div><b>DRR:</b> 2</div></div>
+<div class='meta-row'><div><b>DoC:</b> 23</div><div><b>SoH:</b> 23</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> 1</div>
+</div></div>
+<div class='card' data-art='Kurtas' data-doc='12'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37622461' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/OCTOBER/27/PTcUA0G0_c68cd171b038446c9931bf6a11044faa.jpg'></a>
+<div class='overlay'>No-Rating</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKAAW25611_MN</div>
+<div><span class='label'>Myntra id:</span> 37622461</div>
+<div class='meta-row'><div><b>MTD:</b> 4</div><div><b>DRR:</b> 2</div></div>
+<div class='meta-row'><div><b>DoC:</b> 12</div><div><b>SoH:</b> 12</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> 2</div>
+</div></div>
+<div class='card' data-art='Kurtas' data-doc='43'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/13511632' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/productimage/2021/1/22/e4f5abfc-b2cc-4968-ab30-1e893f9b53a91611313815791-1.jpg'></a>
+<div class='overlay'>4.1
+|
+3.1k Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> Kpram-9084</div>
+<div><span class='label'>Myntra id:</span> 13511632</div>
+<div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 2</div></div>
+<div class='meta-row'><div><b>DoC:</b> 43</div><div><b>SoH:</b> 43</div></div>
+<div><b>Status:</b> Broken: L, XL, XXL</div>
+<div><b>PO Status:</b> 667</div>
+</div></div>
+<div class='card' data-art='Kurtas' data-doc='41'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/24788242' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2023/9/2/ffb8693a-ce9e-4342-af60-ad1d5bcb13fddefault.jpg'></a>
+<div class='overlay'>4.3
+|
+24 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKAAW231001_BK</div>
+<div><span class='label'>Myntra id:</span> 24788242</div>
+<div class='meta-row'><div><b>MTD:</b> 7</div><div><b>DRR:</b> 2</div></div>
+<div class='meta-row'><div><b>DoC:</b> 41</div><div><b>SoH:</b> 82</div></div>
+<div><b>Status:</b> Broken: XL, XXL</div>
+<div><b>PO Status:</b> 6</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='35'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/25235402' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/25235402/2023/9/26/bb354219-ee99-4a51-be9d-d0445481fb701695718821642IshinWomensVelvetSelfDesignPurpleStraightKurtaSuitSetwithTro1.jpg'></a>
+<div class='overlay'>4.1
+|
+519 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW231194_PL</div>
+<div><span class='label'>Myntra id:</span> 25235402</div>
+<div class='meta-row'><div><b>MTD:</b> 10</div><div><b>DRR:</b> 2</div></div>
+<div class='meta-row'><div><b>DoC:</b> 35</div><div><b>SoH:</b> 105</div></div>
+<div><b>Status:</b> Broken: S, L</div>
+<div><b>PO Status:</b> 17</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='23'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37942941' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/NOVEMBER/13/Vdz4FG7Q_0ee0839918e1419f877ec6a9ca103a1e.jpg'></a>
+<div class='overlay'>No-Rating</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW25637_WN</div>
+<div><span class='label'>Myntra id:</span> 37942941</div>
+<div class='meta-row'><div><b>MTD:</b> 4</div><div><b>DRR:</b> 2</div></div>
+<div class='meta-row'><div><b>DoC:</b> 23</div><div><b>SoH:</b> 23</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> 9</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/25235334' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/25235334/2023/9/26/944b70ee-6013-49ef-becf-4de45223015a1695714193805IshinWomensVelvetSelfDesignBlackStraightKurtaSuitSetwithTrou1.jpg'></a>
+<div class='overlay'>4
+|
+398 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW231196_BK</div>
+<div><span class='label'>Myntra id:</span> 25235334</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 8</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> 11</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/35456397' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2025/JULY/5/RRZZzEj7_077baff680194d47a02fdba7b6618dee.jpg'></a>
+<div class='overlay'>4
+|
+589 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKTAW25025_PL</div>
+<div><span class='label'>Myntra id:</span> 35456397</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 5</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Dresses' data-doc='347'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/32443515' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2025/JANUARY/21/7K6IeD4L_5c3497670b584aca8d3a7b07bee6e2d4.jpg'></a>
+<div class='overlay'>4.4
+|
+108 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWDRAW24365_RD</div>
+<div><span class='label'>Myntra id:</span> 32443515</div>
+<div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 347</div><div><b>SoH:</b> 347</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 55</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='390'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/25424702' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/25424702/2023/10/10/893e5a84-d5b3-477c-bc38-58abafddb01e1696926748531IshinWomenTealEthnicMotifsEmbroideredRegularThreadWorkVelvet1.jpg'></a>
+<div class='overlay'>4
+|
+18 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW231197_TL</div>
+<div><span class='label'>Myntra id:</span> 25424702</div>
+<div class='meta-row'><div><b>MTD:</b> 5</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 390</div><div><b>SoH:</b> 390</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 3</div>
+</div></div>
+<div class='card' data-art='Earrings' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37165890' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/OCTOBER/30/NiQpWAf9_76b3b4d2ccff41058157cd996e112856.jpg'></a>
+<div class='overlay'>No-Rating</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> ER-IS-10122</div>
+<div><span class='label'>Myntra id:</span> 37165890</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 15</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> 31</div>
+</div></div>
+<div class='card' data-art='Kurtas' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/12124550' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/12124550/2020/8/25/9b873b48-77a0-4eaf-ab39-586d206b273f1598359942252-Ishin-Womens-Cotton-Pink-Embellished-Anarkali-Kurta-12159835-1.jpg'></a>
+<div class='overlay'>3.9
+|
+234 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> Kurpram-3007</div>
+<div><span class='label'>Myntra id:</span> 12124550</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 338</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37936814' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/NOVEMBER/13/J0Ngb6Ox_d6d4f45010b9459a83039e60b831f73d.jpg'></a>
+<div class='overlay'>No-Rating</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKTAW25649_NV</div>
+<div><span class='label'>Myntra id:</span> 37936814</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 91</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 7</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='1033'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/25516164' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/25516164/2023/10/17/24fed97d-35b4-48ee-9323-a41ec1439e381697538962391IshinWomenWhiteEthnicMotifsEmbroideredHighSlitMirrorWorkPure1.jpg'></a>
+<div class='overlay'>4.1
+|
+214 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW231205_OW</div>
+<div><span class='label'>Myntra id:</span> 25516164</div>
+<div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 1033</div><div><b>SoH:</b> 1033</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Sarees' data-doc='VPL'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/34755355' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2025/JUNE/3/XjuSpK1m_eab8f99b1c474596b4a4386d5832ed4e.jpg'></a>
+<div class='overlay'>No-Rating</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> KHAJANA_VOL1_LILACPINK</div>
+<div><span class='label'>Myntra id:</span> 34755355</div>
+<div class='meta-row'><div><b>MTD:</b> 0</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> VPL</div><div><b>SoH:</b> 0</div></div>
+<div><b>Status:</b> VPL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Co-Ords' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/25516168' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/25516168/2023/10/17/dd864e33-0741-4df4-a854-3e493a30bd241697539933623Co-Ords1.jpg'></a>
+<div class='overlay'>3.7
+|
+604 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKTAW231208_PL</div>
+<div><span class='label'>Myntra id:</span> 25516168</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 1059</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 220</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/36824351' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/SEPTEMBER/21/gJyr6oT8_5266241c433e4b579ce8379e1eef26ea.jpg'></a>
+<div class='overlay'>3.8
+|
+5 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKTAW24905_WH</div>
+<div><span class='label'>Myntra id:</span> 36824351</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 93</div></div>
+<div><b>Status:</b> Broken: S</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='20'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/25651216' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/25651216/2023/10/27/e16e85a3-45b1-45c8-8b8d-c5640869c5301698400712307IshinWomenMaroonEthnicMotifsEmbroideredRegularThreadWorkVelv1.jpg'></a>
+<div class='overlay'>3.5
+|
+21 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKTAW231195_MN</div>
+<div><span class='label'>Myntra id:</span> 25651216</div>
+<div class='meta-row'><div><b>MTD:</b> 4</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 20</div><div><b>SoH:</b> 20</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> 1</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37360155' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/OCTOBER/14/9LwAsh2j_3b4db48087cb46cbb5d65f7f25e0b107.jpg'></a>
+<div class='overlay'>4.3
+|
+44 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW24984_YL</div>
+<div><span class='label'>Myntra id:</span> 37360155</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 21</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurtas' data-doc='4'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/24788222' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2023/9/2/1d1eb5c8-9863-4f72-8b3b-2e566747f72fdefault.jpg'></a>
+<div class='overlay'>4
+|
+46 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKAAW231016_WN</div>
+<div><span class='label'>Myntra id:</span> 24788222</div>
+<div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 4</div><div><b>SoH:</b> 4</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> 202</div>
+</div></div>
+<div class='card' data-art='Kurtas' data-doc='30'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37622455' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/OCTOBER/27/CWUrFENW_50bd1b14bc4b4370bb0060f6450cec5b.jpg'></a>
+<div class='overlay'>No-Rating</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKAAW25604_MN</div>
+<div><span class='label'>Myntra id:</span> 37622455</div>
+<div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 30</div><div><b>SoH:</b> 30</div></div>
+<div><b>Status:</b> Broken: M, L, XL, XXL</div>
+<div><b>PO Status:</b> 1</div>
+</div></div>
+<div class='card' data-art='Kurtas' data-doc='227'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/24788230' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2023/9/2/f2b7a384-9756-4f36-a873-20c6e58d73d8default.jpg'></a>
+<div class='overlay'>4.4
+|
+95 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKAAW231019_PN</div>
+<div><span class='label'>Myntra id:</span> 24788230</div>
+<div class='meta-row'><div><b>MTD:</b> 4</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 227</div><div><b>SoH:</b> 227</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 1</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37942939' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/NOVEMBER/13/ZcERYkgV_79ec4e6e48de4b1c83c6024d6b96a97a.jpg'></a>
+<div class='overlay'>No-Rating</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKTAW25650_GN</div>
+<div><span class='label'>Myntra id:</span> 37942939</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 87</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 9</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='VPL'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/26921104' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/26921104/2024/1/14/b36642a1-feab-4072-9f66-9a5c5c6a00291705227687288IshinWomenYellowFloralPrintedRegularKurtawithPalazzos1.jpg'></a>
+<div class='overlay'>3.6
+|
+56 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDS2490-YLW</div>
+<div><span class='label'>Myntra id:</span> 26921104</div>
+<div class='meta-row'><div><b>MTD:</b> 0</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> VPL</div><div><b>SoH:</b> 0</div></div>
+<div><b>Status:</b> VPL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Co-Ords' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/33753070' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2025/APRIL/22/UD2HBg15_7a2ee2d93fb14c2899bebba72fa7cd89.jpg'></a>
+<div class='overlay'>4.5
+|
+19 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWCSAW24670_PN</div>
+<div><span class='label'>Myntra id:</span> 33753070</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 4</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Sarees' data-doc='VPL'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/28110992' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/28110992/2024/3/8/c66adedf-8dc5-46cf-a7dd-e9134a5f42ee1709841815427Sarees1.jpg'></a>
+<div class='overlay'>3.9
+|
+18 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> OOP-449-RE</div>
+<div><span class='label'>Myntra id:</span> 28110992</div>
+<div class='meta-row'><div><b>MTD:</b> 0</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> VPL</div><div><b>SoH:</b> 0</div></div>
+<div><b>Status:</b> VPL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurtas' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/35066233' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2025/JUNE/18/HQnndJgf_c90844676c4b4eb19b3d821cbc95aece.jpg'></a>
+<div class='overlay'>3.9
+|
+49 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKAAW25119_LV</div>
+<div><span class='label'>Myntra id:</span> 35066233</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 15</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurtas' data-doc='VPL'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/28308120' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/28308120/2024/3/22/9d7eb3b8-755f-45dc-baf4-7a1563dc03151711096319105-Ishin-Geometric-Embroidered-Kurta-2101711096318778-1.jpg'></a>
+<div class='overlay'>3.9
+|
+303 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> KRGR043-VA0018-L</div>
+<div><span class='label'>Myntra id:</span> 28308120</div>
+<div class='meta-row'><div><b>MTD:</b> 0</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> VPL</div><div><b>SoH:</b> 0</div></div>
+<div><b>Status:</b> VPL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/35456424' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2025/JULY/5/4Rh5H9Pp_9ed3e1d1e9db4b1598688e82d4b4622a.jpg'></a>
+<div class='overlay'>3.5
+|
+6 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKTAW24837_RS</div>
+<div><span class='label'>Myntra id:</span> 35456424</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 8</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/28927392' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/28927392/2024/4/15/a660c259-3a6d-4e9e-af9e-e844b0478eae1713187749855KurtaSets1.jpg'></a>
+<div class='overlay'>3.9
+|
+35 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDS24256_IG</div>
+<div><span class='label'>Myntra id:</span> 28927392</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 196</div></div>
+<div><b>Status:</b> Broken: S, L, XL, XXL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/36897008' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/OCTOBER/30/J5YIGHtH_35cf26396b4c49ad86ded1931efaacb4.jpg'></a>
+<div class='overlay'>No-Rating</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKTAW25121_BK</div>
+<div><span class='label'>Myntra id:</span> 36897008</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 97</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='695'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/29066552' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/29066552/2024/4/19/737946f2-8cad-4fc0-9d4e-972fe07bdb2d1713522936458KurtaSets1.jpg'></a>
+<div class='overlay'>4.4
+|
+494 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDS24182_OW</div>
+<div><span class='label'>Myntra id:</span> 29066552</div>
+<div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 695</div><div><b>SoH:</b> 695</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 453</div>
+</div></div>
+<div class='card' data-art='Earrings' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37165904' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/SEPTEMBER/24/2nkM7h7q_391155803cb54470943a7c4a6bfda048.jpg'></a>
+<div class='overlay'>No-Rating</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> ER-IS-10290</div>
+<div><span class='label'>Myntra id:</span> 37165904</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 3</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> 15</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='827'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/29066562' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/29066562/2024/4/19/8dbe2dc7-4e0b-42f3-9a31-341ec5251e701713524434398KurtaSets1.jpg'></a>
+<div class='overlay'>4.3
+|
+1.1k Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDS24174_OW</div>
+<div><span class='label'>Myntra id:</span> 29066562</div>
+<div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 827</div><div><b>SoH:</b> 827</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 334</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37360157' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/OCTOBER/6/KIIKZcpW_3819859c39db4d548ab8b55d27fd6af5.jpg'></a>
+<div class='overlay'>4.1
+|
+120 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW25123_PL</div>
+<div><span class='label'>Myntra id:</span> 37360157</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 92</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='861'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/29196962' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/29196962/2024/4/26/0ff218f7-2d40-46ba-85d6-7244864c4ec11714111754611IshinWomenFloralEmbroideredRegularThreadWorkKurtawithTrouser1.jpg'></a>
+<div class='overlay'>4.2
+|
+166 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDS24179_PN</div>
+<div><span class='label'>Myntra id:</span> 29196962</div>
+<div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 861</div><div><b>SoH:</b> 861</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='12'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37440004' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/OCTOBER/10/0QvMDdYo_93a3b5f00a134eef977645114ab2261f.jpg'></a>
+<div class='overlay'>3.4
+|
+7 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW25634_GN</div>
+<div><span class='label'>Myntra id:</span> 37440004</div>
+<div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 12</div><div><b>SoH:</b> 12</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> 2</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/29286262' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/29286262/2024/6/26/a3358ffb-e558-45f9-a0c1-8371ce7541141719400794034IshinV-NeckFloralPrintedAngrakhaPureCottonAnarkaliKurtawithT1.jpg'></a>
+<div class='overlay'>4.2
+|
+93 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDS24241_MT</div>
+<div><span class='label'>Myntra id:</span> 29286262</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 158</div></div>
+<div><b>Status:</b> Broken: XXL</div>
+<div><b>PO Status:</b> 195</div>
+</div></div>
+<div class='card' data-art='Kurtas' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/24788196' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2023/9/2/9974c672-5c4b-49d6-a37d-07b2edf592f2default.jpg'></a>
+<div class='overlay'>4.3
+|
+32 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKAAW231009_BK</div>
+<div><span class='label'>Myntra id:</span> 24788196</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 17</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> 7</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/29371474' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/29371474/2024/6/13/805f8505-ee03-43e6-b791-b50d0642fe431718279176547IshinYellowFloralEmbroideredThreadWorkStraightKurtaWithTrous1.jpg'></a>
+<div class='overlay'>3.8
+|
+34 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDS24196_YL</div>
+<div><span class='label'>Myntra id:</span> 29371474</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 205</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 1</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='21'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37936817' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/NOVEMBER/13/w2WAyIiZ_df6c9ab7ff234a508c399318fda02c19.jpg'></a>
+<div class='overlay'>No-Rating</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW25653_MN</div>
+<div><span class='label'>Myntra id:</span> 37936817</div>
+<div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 21</div><div><b>SoH:</b> 21</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> 6</div>
+</div></div>
+<div class='card' data-art='Kurtas' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/24788234' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/24788234/2023/9/2/6d4f935b-7144-49cc-80f7-b783f1ee211c1693667883814IshinWomenCharcoalEthnicMotifsEmbroideredJacquardKurta1.jpg'></a>
+<div class='overlay'>4.3
+|
+10 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKAAW231017_CH</div>
+<div><span class='label'>Myntra id:</span> 24788234</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 6</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Dresses' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/19133544' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/19133544/2022/8/4/c52ca256-ba1f-4e47-8661-c2b957c53aaf1659597286087-Ishin-Womens-Black-Lurex-Embellished-A-Line-Dress-1511659597-1.jpg'></a>
+<div class='overlay'>4.2
+|
+7.8k Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWDR0411_BK</div>
+<div><span class='label'>Myntra id:</span> 19133544</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 513</div></div>
+<div><b>Status:</b> Broken: L</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurtas' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37943544' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/NOVEMBER/13/ZLehpF9j_7c4ed462757443ab8dc170bdc1c81885.jpg'></a>
+<div class='overlay'>No-Rating</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKAAW25607_PN</div>
+<div><span class='label'>Myntra id:</span> 37943544</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 10</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> 21</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='8'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/32660045' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2025/FEBRUARY/5/Ag9qOcR9_be816b80a6704302879725a0d87324ed.jpg'></a>
+<div class='overlay'>4.2
+|
+1.9k Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW24004_GN</div>
+<div><span class='label'>Myntra id:</span> 32660045</div>
+<div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 8</div><div><b>SoH:</b> 8</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='257'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/9452695' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/9452695/2019/5/20/00e9c0e9-eb2e-4444-aa9c-e5a27af059eb1558350894122-Ishin-Women-Black--White-Solid-Kurta-with-Trousers-497155835-1.jpg'></a>
+<div class='overlay'>4.2
+|
+1.7k Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> Kurplpsf-493</div>
+<div><span class='label'>Myntra id:</span> 9452695</div>
+<div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 257</div><div><b>SoH:</b> 257</div></div>
+<div><b>Status:</b> Broken: L</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Sarees' data-doc='VPL'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/33802761' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2025/APRIL/24/xjQmKVuE_9a2dbb530bd04bfca544875ed0861458.jpg'></a>
+<div class='overlay'>No-Rating</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> VARIETYSILK_VOL1_1005-RE</div>
+<div><span class='label'>Myntra id:</span> 33802761</div>
+<div class='meta-row'><div><b>MTD:</b> 0</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> VPL</div><div><b>SoH:</b> 0</div></div>
+<div><b>Status:</b> VPL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Dress Material' data-doc='VPL'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/30773666' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/AUGUST/29/CezvZ0Lc_1836df26c61b46d5aad7fcdbcb1f9764.jpg'></a>
+<div class='overlay'>4
+|
+17 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> MTMHIPINK-Pink</div>
+<div><span class='label'>Myntra id:</span> 30773666</div>
+<div class='meta-row'><div><b>MTD:</b> 0</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> VPL</div><div><b>SoH:</b> 0</div></div>
+<div><b>Status:</b> VPL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Sarees' data-doc='VPL'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/34755398' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2025/JUNE/3/SFWtjyY2_19b4e8ea37a14668b52f75f9f8f60313.jpg'></a>
+<div class='overlay'>No-Rating</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> KHAJANA_VOL1_RANI</div>
+<div><span class='label'>Myntra id:</span> 34755398</div>
+<div class='meta-row'><div><b>MTD:</b> 0</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> VPL</div><div><b>SoH:</b> 0</div></div>
+<div><b>Status:</b> VPL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Tops' data-doc='200'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/14602034' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/productimage/2021/6/22/030f53a2-61aa-43c5-b6af-893cc2f0518b1624380790272-1.jpg'></a>
+<div class='overlay'>4.1
+|
+1.4k Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> Topknm-13021</div>
+<div><span class='label'>Myntra id:</span> 14602034</div>
+<div class='meta-row'><div><b>MTD:</b> 4</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 200</div><div><b>SoH:</b> 200</div></div>
+<div><b>Status:</b> Broken: M, L</div>
+<div><b>PO Status:</b> 739</div>
+</div></div>
+<div class='card' data-art='Mangalsutra' data-doc='28'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/35248803' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2025/JUNE/27/EHb8Bb7J_e18ee012c5994fcebc24713958cc388f.jpg'></a>
+<div class='overlay'>No-Rating</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> MG-IS-SL-10086</div>
+<div><span class='label'>Myntra id:</span> 35248803</div>
+<div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 28</div><div><b>SoH:</b> 28</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='214'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/30875178' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/SEPTEMBER/5/mNc28CiE_bf66812901a5440fb9cbfe02fd16ac2b.jpg'></a>
+<div class='overlay'>4
+|
+73 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW24316_OW</div>
+<div><span class='label'>Myntra id:</span> 30875178</div>
+<div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 214</div><div><b>SoH:</b> 214</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 1047</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/35456404' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2025/JULY/5/4kfOX21B_8428f81a8e8946c182a31c2d1eda56f8.jpg'></a>
+<div class='overlay'>4
+|
+589 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKTAW25029_GN</div>
+<div><span class='label'>Myntra id:</span> 35456404</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 6</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='291'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/30917190' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/SEPTEMBER/9/vWOK11uG_2fe2f7e5002f48eabe7047c91aaaac5b.jpg'></a>
+<div class='overlay'>4
+|
+20 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW24380_OW</div>
+<div><span class='label'>Myntra id:</span> 30917190</div>
+<div class='meta-row'><div><b>MTD:</b> 4</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 291</div><div><b>SoH:</b> 291</div></div>
+<div><b>Status:</b> Broken: XXL</div>
+<div><b>PO Status:</b> 3</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/35541888' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2025/JULY/8/FXBRX8kh_99e0bf30569d4d5e81a2490846003fd4.jpg'></a>
+<div class='overlay'>3.7
+|
+37 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW25238_OR</div>
+<div><span class='label'>Myntra id:</span> 35541888</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 43</div></div>
+<div><b>Status:</b> Broken: S, M, XL</div>
+<div><b>PO Status:</b> 45</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='215'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/31006810' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/SEPTEMBER/16/ciR3nQCU_1642be8acf324f788ffcdea7dc89ff8a.jpg'></a>
+<div class='overlay'>4
+|
+120 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKTAW24327_OW</div>
+<div><span class='label'>Myntra id:</span> 31006810</div>
+<div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 215</div><div><b>SoH:</b> 215</div></div>
+<div><b>Status:</b> Broken: S</div>
+<div><b>PO Status:</b> 301</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/36824363' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/SEPTEMBER/21/5qq97tbl_1bc6224468534d00b145b6781f633010.jpg'></a>
+<div class='overlay'>4.1
+|
+11 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW24773_BL</div>
+<div><span class='label'>Myntra id:</span> 36824363</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 92</div></div>
+<div><b>Status:</b> Broken: XXL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/31006814' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/SEPTEMBER/16/YWq8ZEBr_7aaf1c2aa6444f398dd851902f5f3a59.jpg'></a>
+<div class='overlay'>4.3
+|
+25 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW24314_OW</div>
+<div><span class='label'>Myntra id:</span> 31006814</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 259</div></div>
+<div><b>Status:</b> Broken: XXL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Earrings' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37165841' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/SEPTEMBER/24/qe11vRxr_daf2871d5b5c4b15965b38869e2709fa.jpg'></a>
+<div class='overlay'>No-Rating</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> ER-IS-10088</div>
+<div><span class='label'>Myntra id:</span> 37165841</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 12</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> 31</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='152'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/31018799' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/SEPTEMBER/17/X7O214Rv_7f576d775e78403d9fbc149b483b3abf.jpg'></a>
+<div class='overlay'>4.4
+|
+490 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW24290_NV</div>
+<div><span class='label'>Myntra id:</span> 31018799</div>
+<div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 152</div><div><b>SoH:</b> 152</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 299</div>
+</div></div>
+<div class='card' data-art='Earrings' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37165896' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/SEPTEMBER/24/7xy5Boxn_fbd2c45acaed4822b2efd35ce5055230.jpg'></a>
+<div class='overlay'>No-Rating</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> ER-IS-10126</div>
+<div><span class='label'>Myntra id:</span> 37165896</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 9</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> 32</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/15535354' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/15535354/2021/11/22/38fd3096-b499-4c4d-93e4-fc25ef5325361637566160022IshinWomensRayonBlackEmbroideredA-LineKurtaPalazzoDupattaSet1.jpg'></a>
+<div class='overlay'>4.4
+|
+24 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> XyKplpm-847D</div>
+<div><span class='label'>Myntra id:</span> 15535354</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 62</div></div>
+<div><b>Status:</b> Broken: XL, XXL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37360153' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/OCTOBER/14/bzOcmdMc_3813631f8d4f416487c95adc6e5d236e.jpg'></a>
+<div class='overlay'>3.6
+|
+27 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW25010_VL</div>
+<div><span class='label'>Myntra id:</span> 37360153</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 35</div></div>
+<div><b>Status:</b> Broken: S, M, XXL</div>
+<div><b>PO Status:</b> 3</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='1657'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/31384819' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/OCTOBER/22/Y6Y9JGCp_0787e4df68204acb939bb0446d127881.jpg'></a>
+<div class='overlay'>4.1
+|
+501 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW24377_OR</div>
+<div><span class='label'>Myntra id:</span> 31384819</div>
+<div class='meta-row'><div><b>MTD:</b> 4</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 1657</div><div><b>SoH:</b> 1657</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 774</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37360156' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/OCTOBER/14/J4yhjI4h_8334d1d2d2e442139a99cfec40f58923.jpg'></a>
+<div class='overlay'>3.6
+|
+27 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW25009_OW</div>
+<div><span class='label'>Myntra id:</span> 37360156</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 13</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Tops' data-doc='180'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/15954168' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/15954168/2021/11/22/ba3ceca3-7845-4802-a230-3c7e61fc5f1a1637566131275IshinWomensWhiteEmbroideredCropTop1.jpg'></a>
+<div class='overlay'>3.9
+|
+448 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> TopItf-19037</div>
+<div><span class='label'>Myntra id:</span> 15954168</div>
+<div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 180</div><div><b>SoH:</b> 180</div></div>
+<div><b>Status:</b> Broken: L, XL, XXL</div>
+<div><b>PO Status:</b> 501</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='16'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37360169' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/OCTOBER/6/LLLNyC2C_aef65d0ee4204ce1bc73e3aca20081f6.jpg'></a>
+<div class='overlay'>2.6
+|
+5 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW25647_BL</div>
+<div><span class='label'>Myntra id:</span> 37360169</div>
+<div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 16</div><div><b>SoH:</b> 16</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> 7</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='19'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/32041456' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/DECEMBER/20/DkVdGAgA_54d95e854311493db7445d06136a58dd.jpg'></a>
+<div class='overlay'>4.1
+|
+133 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW24753_PL</div>
+<div><span class='label'>Myntra id:</span> 32041456</div>
+<div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 19</div><div><b>SoH:</b> 19</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> 1</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/19281676' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/19281676/2022/8/4/11698175-90e6-4e90-811d-8a67dd93422a1659618137501-Ishin-Womens-Off-White-Embroidered-A-line-Kurta-with-Sharara-1.jpg'></a>
+<div class='overlay'>4.2
+|
+1.7k Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSD0424_WH</div>
+<div><span class='label'>Myntra id:</span> 19281676</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 46</div></div>
+<div><b>Status:</b> Broken: M, L, XL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='352'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/15980050' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/15980050/2021/11/24/5c57f89f-437a-42b0-a5bf-e14a68c109761637733998771-Ishin-Womens-Navy-Blue-Gotta-Patti-Embroidered-Anarkali-Pepl-1.jpg'></a>
+<div class='overlay'>4.3
+|
+1.1k Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> Kpldsrd-19063</div>
+<div><span class='label'>Myntra id:</span> 15980050</div>
+<div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 352</div><div><b>SoH:</b> 352</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 450</div>
+</div></div>
+<div class='card' data-art='Dresses' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/21045414' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/21045414/2022/12/2/0c897484-863f-44a4-a607-8bc8ae9d242d1670005544041IshinWomensMultiColouredFloralDress1.jpg'></a>
+<div class='overlay'>3.7
+|
+34 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> Drkuls-14011</div>
+<div><span class='label'>Myntra id:</span> 21045414</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 397</div></div>
+<div><b>Status:</b> Broken: XXL</div>
+<div><b>PO Status:</b> 259</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='71'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/15980528' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/15980528/2021/11/29/38b46d75-4e4e-485e-94e6-3dfebbe475f51638165846359-Ishin-Women-Lavender-Regular-Pure-Cotton-Kurta-with-Trousers-1.jpg'></a>
+<div class='overlay'>4.3
+|
+1.2k Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> Kpldmvel-19061</div>
+<div><span class='label'>Myntra id:</span> 15980528</div>
+<div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 71</div><div><b>SoH:</b> 71</div></div>
+<div><b>Status:</b> Broken: L, XL</div>
+<div><b>PO Status:</b> 417</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='332'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/21638896' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/21638896/2023/1/20/39ddd279-4144-4b66-9143-f8c9a020cfb01674212254707IshinWomensGreenYokeDesignA-LineKurtaPalazzoSet1.jpg'></a>
+<div class='overlay'>4.3
+|
+125 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> Kurplpram-3012</div>
+<div><span class='label'>Myntra id:</span> 21638896</div>
+<div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 332</div><div><b>SoH:</b> 332</div></div>
+<div><b>Status:</b> Broken: L</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='1191'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/9697573' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/9697573/2019/5/28/43c55089-f1e0-4b93-9a19-93ca1c4824fe1559019759766-Ishin-Women-Blue--White-Printed-Kurta-with-Palazzos-80815590-1.jpg'></a>
+<div class='overlay'>4
+|
+3.2k Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> Kurplkade-141</div>
+<div><span class='label'>Myntra id:</span> 9697573</div>
+<div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 1191</div><div><b>SoH:</b> 1191</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 300</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='222'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/13755686' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/productimage/2021/2/25/65016aa8-7cff-41ce-86b7-b754f466780a1614233300699-1.jpg'></a>
+<div class='overlay'>4.3
+|
+1.8k Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> Kplpm-8052</div>
+<div><span class='label'>Myntra id:</span> 13755686</div>
+<div class='meta-row'><div><b>MTD:</b> 4</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 222</div><div><b>SoH:</b> 222</div></div>
+<div><b>Status:</b> Broken: S, M</div>
+<div><b>PO Status:</b> 150</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='6'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/32041499' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/DECEMBER/20/xpJtJxVb_4a38d4e76b1547e196524c43b97c5254.jpg'></a>
+<div class='overlay'>4
+|
+120 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW24756_BK</div>
+<div><span class='label'>Myntra id:</span> 32041499</div>
+<div class='meta-row'><div><b>MTD:</b> 4</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 6</div><div><b>SoH:</b> 6</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> 2</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='41'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37936816' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/NOVEMBER/13/qfhcxcMG_bc3f8519922442ce803c57428dbcfb32.jpg'></a>
+<div class='overlay'>No-Rating</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW25643_BK</div>
+<div><span class='label'>Myntra id:</span> 37936816</div>
+<div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 41</div><div><b>SoH:</b> 41</div></div>
+<div><b>Status:</b> Broken: S, L, XL, XXL</div>
+<div><b>PO Status:</b> 6</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='7'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/32059577' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/DECEMBER/23/8svnR87z_4522247bfce44642a9c16ef07410cd7c.jpg'></a>
+<div class='overlay'>3.9
+|
+100 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWKTAW24542_BK</div>
+<div><span class='label'>Myntra id:</span> 32059577</div>
+<div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 7</div><div><b>SoH:</b> 7</div></div>
+<div><b>Status:</b> Broken: S, M, L, XL, XXL</div>
+<div><b>PO Status:</b> 8</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='29'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37936818' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/NOVEMBER/13/6FTkOSSR_0a86258221514c4bb08752c5280efc59.jpg'></a>
+<div class='overlay'>No-Rating</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW25645_GN</div>
+<div><span class='label'>Myntra id:</span> 37936818</div>
+<div class='meta-row'><div><b>MTD:</b> 3</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 29</div><div><b>SoH:</b> 29</div></div>
+<div><b>Status:</b> Broken: S, L, XL, XXL</div>
+<div><b>PO Status:</b> 5</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='184'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/17724678' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/17724678/2022/4/14/6a28d58b-098a-48ae-9015-b7a6bc5e0b641649935334161-Ishin-Womens-Yellow-Embroidered-A-Line-Kurta-with-Sharara--D-1.jpg'></a>
+<div class='overlay'>4.3
+|
+884 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSD070_YL</div>
+<div><span class='label'>Myntra id:</span> 17724678</div>
+<div class='meta-row'><div><b>MTD:</b> 2</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 184</div><div><b>SoH:</b> 184</div></div>
+<div><b>Status:</b> Not Broken</div>
+<div><b>PO Status:</b> 294</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='222'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/13840546' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/productimage/2021/3/9/65c4b7a8-7d55-4a0e-ba05-d6cd779ab4391615304109459-1.jpg'></a>
+<div class='overlay'>4.4
+|
+263 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> Kplpm-8052</div>
+<div><span class='label'>Myntra id:</span> 13840546</div>
+<div class='meta-row'><div><b>MTD:</b> 4</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 222</div><div><b>SoH:</b> 222</div></div>
+<div><b>Status:</b> Broken: S, M</div>
+<div><b>PO Status:</b> 150</div>
+</div></div>
+<div class='card' data-art='Dresses' data-doc='455'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/18811916' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/18811916/2022/7/7/c0a6de1b-a546-44a0-8997-095765e790291657167254654-Ishin-Womens-Cream-Lurex-Waisted-Dress-2901657167253989-1.jpg'></a>
+<div class='overlay'>3.8
+|
+332 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWDR0243_CR</div>
+<div><span class='label'>Myntra id:</span> 18811916</div>
+<div class='meta-row'><div><b>MTD:</b> 5</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 455</div><div><b>SoH:</b> 455</div></div>
+<div><b>Status:</b> Broken: XXL</div>
+<div><b>PO Status:</b> 161</div>
+</div></div>
+<div class='card' data-art='Dress Material' data-doc='VPL'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/29723090' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/29723090/2024/5/23/6c673652-4a09-434f-939e-f8073cff94f71716470879438NavyRoyaleHeavyRomanSilkThreadWorkDressMaterialwithDupattaby1.jpg'></a>
+<div class='overlay'>3.9
+|
+35 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> ANLS169046D-Navy Blue</div>
+<div><span class='label'>Myntra id:</span> 29723090</div>
+<div class='meta-row'><div><b>MTD:</b> 0</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> VPL</div><div><b>SoH:</b> 0</div></div>
+<div><b>Status:</b> VPL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='LoW_MtD'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/37943762' target='_blank'><img src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/NOVEMBER/13/EWcpehw3_b1d8f2afc2e540f88dfa22ea9f1b2031.jpg'></a>
+<div class='overlay'>No-Rating</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDAW25638_GN</div>
+<div><span class='label'>Myntra id:</span> 37943762</div>
+<div class='meta-row'><div><b>MTD:</b> 1</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> LoW_MtD</div><div><b>SoH:</b> 57</div></div>
+<div><b>Status:</b> Broken: L, XL</div>
+<div><b>PO Status:</b> 4</div>
+</div></div>
+<div class='card' data-art='Sarees' data-doc='VPL'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/29943951' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/29943951/2024/6/12/a6f3e73a-9c95-4acf-b26c-211596ee10331718132030561Sarees1.jpg'></a>
+<div class='overlay'>4.1
+|
+22 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> PATOLALEHERIYA-5004-Pink</div>
+<div><span class='label'>Myntra id:</span> 29943951</div>
+<div class='meta-row'><div><b>MTD:</b> 0</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> VPL</div><div><b>SoH:</b> 0</div></div>
+<div><b>Status:</b> VPL</div>
+<div><b>PO Status:</b> No_Open_PO</div>
+</div></div>
+<div class='card' data-art='Kurta Sets' data-doc='104'>
+<div class='img-wrap'>
+<a href='https://www.myntra.com/30068344' target='_blank'><img src='https://azmyntra.myntassets.com/dam-assets/assets/images/diy/2024/6/28/a2367c9c-7739-4f57-9094-72443839275adefault.jpg'></a>
+<div class='overlay'>3.8
+|
+266 Ratings</div></div>
+<div class='meta'>
+<div><span class='label'>STYLE:</span> INWSDS24050_GR</div>
+<div><span class='label'>Myntra id:</span> 30068344</div>
+<div class='meta-row'><div><b>MTD:</b> 11</div><div><b>DRR:</b> 1</div></div>
+<div class='meta-row'><div><b>DoC:</b> 104</div><div><b>SoH:</b> 312</div></div>
+<div><b>Status:</b> Broken: XXL</div>
+<div><b>PO Status:</b> 420</div>
+</div></div>
+</div>
+<script>
+const btn=document.getElementById('artBtn'),dd=document.getElementById('artDD');
+btn.onclick=()=>dd.classList.toggle('show');
+document.onclick=e=>{if(!btn.contains(e.target)&&!dd.contains(e.target))dd.classList.remove('show')}
+const all=document.getElementById('all'),arts=[...document.querySelectorAll('.art')];
+function apply(){
+ let sel=arts.filter(x=>x.checked).map(x=>x.value);
+ if(all.checked) sel=arts.map(x=>x.value);
+ document.querySelectorAll('.card').forEach(c=>{
+  c.style.display=sel.includes(c.dataset.art)?'':'none';
+ });
+ let s=document.getElementById('docSort').value;
+ if(s){
+  let v=[...document.querySelectorAll('.card')].filter(c=>c.style.display!=='none');
+  v.sort((a,b)=>(parseFloat(a.dataset.doc)||0)-(parseFloat(b.dataset.doc)||0));
+  if(s==='desc')v.reverse();
+  v.forEach(x=>gallery.appendChild(x));
+ }
+}
+all.onchange=()=>{arts.forEach(x=>x.checked=all.checked);apply()}
+arts.forEach(x=>x.onchange=()=>{all.checked=arts.every(y=>y.checked);apply()})
+docSort.onchange=apply
+</script></body></html>
